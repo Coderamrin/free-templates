@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+.nav-social {
+  color: #029e7c;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.nav-social:hover {
+  color: #ffffff;
+}
+
+.collapse.navbar-collapse {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 100%;
+  right: 500%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  padding: 0 1rem;
+  background: #000000;
+}
+
+.collapse.navbar-collapse.open {
+  right: 0;
+}
+
+/* header styles */
+.main {
+  background-color: #000000;
+}
+
+.main-heading {
+  color: #ffffff;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.project-grid {
+  position: relative;
+  top: -6rem;
+}
+
+.project-item {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.project-image img {
+  width: 100%;
+  height: 240px;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 1px;
+  color: #ffffff;
+}
+
+.btn-preview {
+  background-color: #029e7c;
+  margin-right: 1rem;
+}
+
+.btn-download {
+  background-color: #0066ff;
+}
+
+/*desktop style for nav*/
+@media screen and (min-width: 1000px) {
+  .collapse.navbar-collapse {
+    display: inline-block;
+    position: static;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
