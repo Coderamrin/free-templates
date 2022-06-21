@@ -328,7 +328,6 @@ ul {
 }
 
 /*contact section styles*/
-
 .contact {
   font-size: 1.2rem;
   color: $color-black;
@@ -349,8 +348,21 @@ ul {
   }
 }
 
-/*footer styles*/
+/*signup form*/
+.signup-form,
+.login-form {
+  input,
+  button {
+    border-radius: 50px;
+    padding: 1rem 1.4rem;
+  }
 
+  button {
+    text-transform: uppercase;
+  }
+}
+
+/*footer styles*/
 .footer {
   background-color: $color-secondery;
   color: $color-white;
@@ -397,7 +409,7 @@ ul {
   }
 }
 
-/*media queries*/
+/*mobile media queries*/
 @media screen and (max-width: 1000px) {
   .hero {
     img {
@@ -411,20 +423,28 @@ ul {
     }
   }
 
-  .collapse.navbar-collapse,
-  .navbar-collapse.collapsing {
-    background-color: $color-secondery2;
+  .collapse.navbar-collapse {
+    display: block;
+    position: absolute;
     width: 100%;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    height: 100vh;
+    top: 100%;
+    right: 200%;
+    transition: all 0.5s ease-in-out;
+    padding: 0 1rem;
+    background: #fff;
+  }
 
-    a {
-      color: $color-primary;
-    }
+  .collapse.navbar-collapse.open {
+    right: 0;
+  }
+}
 
-    a.active {
-      color: $color-black;
-    }
+//desktop media queries
+@media screen and (min-width: 990px) {
+  .collapse.navbar-collapse {
+    display: inline-block;
+    position: static;
+    height: auto;
   }
 }

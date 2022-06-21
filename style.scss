@@ -10,6 +10,12 @@ $accent-color: #043e75;
 //customize the navbar bootstrap design for mobile
 .navbar {
   background-color: $primary-color;
+  color: red;
+
+  &-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 
 .nav-link {
@@ -46,7 +52,6 @@ $accent-color: #043e75;
 .main {
   background-color: $primary-color;
   &-heading {
-    // height: 30vh;
     color: #ffffff;
     padding: 8rem 2rem;
     text-align: center;

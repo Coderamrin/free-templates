@@ -20,8 +20,8 @@ function displayPorjects(projects) {
                     <div class="project-info">
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
-                        <a href=${project.live} class="btn btn-preview">Preview</a>
-                        <a href=${project.download} class="btn btn-download">Download</a>
+                        <a href=${project.live} target="_blank" class="btn btn-preview">Preview</a>
+                        <a href=${project.download} class="btn btn-download" target="_blank">Download</a>
                     </div>
                 </div>`;
 
