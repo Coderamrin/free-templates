@@ -1,11 +1,12 @@
 //color variables
-$color-primary: #2f4858;
-$color-secondery: #ffffff;
-$color-accent: #ff3363;
-$color-light-green: #e3fffd;
-$color-gray: #a5a5a5;
+$color-primary: #ff5200;
+$color-secondery: #f6b69c;
+$color-accent: #ffe7d5;
 $color-black: #000;
 $color-white: #fff;
+
+//delete
+$color-sec-primary: #c8fcea;
 
 //fontsize variables
 $fs-xxlarge: 3.75rem;
@@ -63,7 +64,7 @@ ul {
 
 .btn {
   background-color: $color-accent;
-  color: $color-secondery;
+  color: $color-primary;
   padding: 0.8rem 2.5rem;
   font-weight: bold;
   border: 2px solid $color-accent;
@@ -72,9 +73,29 @@ ul {
   text-transform: uppercase;
 
   &:hover {
-    background-color: $color-secondery;
-    color: $color-primary;
-    border-color: $color-primary;
+    background-color: $color-primary;
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+}
+
+.social {
+  a {
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    margin: 0 0.2rem;
+    color: $color-white;
+    background-color: $color-primary;
+    border-radius: 50%;
+    border: 2px solid $color-primary;
+    font-size: 1.3rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $color-secondery;
+      color: $color-primary;
+      border-color: $color-primary;
+    }
   }
 }
 
@@ -84,7 +105,7 @@ ul {
 
 /* nav styles */
 .navbar {
-  background-color: $color-white;
+  background-color: $color-primary;
   color: $color-secondery;
   text-transform: uppercase;
   font-weight: bold;
@@ -93,6 +114,11 @@ ul {
   &-brand {
     font-size: 1.5rem;
     font-weight: bold;
+    color: $color-secondery;
+
+    &:hover {
+      color: $color-secondery;
+    }
   }
 }
 
@@ -102,20 +128,22 @@ ul {
     margin-right: 1rem;
   }
 
+  &-link {
+    color: $color-secondery;
+    &:hover {
+      color: $color-white;
+    }
+  }
+
   &-link.active {
     color: $color-accent !important;
   }
 
   &-btn {
     padding: 0.4rem 1.3rem;
-    color: $color-secondery!important; 
-
-    &:hover {
-      color: $color-primary!important;
-    }
   }
 }
-/* mobile nav styles */
+
 .collapse.navbar-collapse {
   display: block;
   position: absolute;
@@ -125,7 +153,7 @@ ul {
   right: 200%;
   transition: all 0.5s ease-in-out;
   padding: 0 1rem;
-  background: #fff;
+  background: $color-primary;
 }
 
 .collapse.navbar-collapse.open {
@@ -134,8 +162,8 @@ ul {
 
 /* hero styles */
 .hero {
-  background-color: $color-secondery;
-  color: $color-primary;
+  background-color: $color-primary;
+  color: $color-secondery;
   padding: 5.5rem 0;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
@@ -149,6 +177,7 @@ ul {
   &-description {
     font-size: $fs-small;
     margin-bottom: 1rem;
+    color: $color-secondery;
   }
 
   &-btn {
@@ -158,15 +187,15 @@ ul {
 
 /* features section styles */
 .features {
-  background: $color-primary;
+  background: $color-accent;
 
   h2,
   h3 {
-    color: $color-white;
+    color: $color-primary;
   }
 
   p {
-    color: $color-light-green;
+    color: $color-black;
   }
 
   &-item {
@@ -174,21 +203,22 @@ ul {
     text-align: center;
     padding: 2rem 1rem;
     margin: 1rem auto;
-    box-shadow: 0 0.2rem 2rem rgba(117, 117, 117, 0.308);
+    box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
     transition: transform 0.5s;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.04);
       cursor: pointer;
-      box-shadow: 0 0.2rem 1rem rgba(117, 117, 117, 0.432);
+      box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
     }
   }
 
   &-item-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    background-color: $color-white;
-    width: 60px;
+    background-color: $color-primary;
+    color: $color-white;
+    width: 62px;
     margin: 0 auto;
     text-align: center;
     border-radius: 50%;
@@ -197,71 +227,61 @@ ul {
   &-item-btn {
     padding: 0.5rem 1.5rem;
     margin-top: 1rem;
-    border: 2px solid $color-accent;
+    border: 2px solid $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
 
     &:hover {
-      background-color: $color-secondery;
-      color: $color-accent;
-      border-color: $color-accent;
+      background-color: $color-accent;
+      color: $color-primary;
+      border-color: $color-primary;
     }
   }
 }
 
 /* about section styles */
 .about {
-  max-width: 1400px;
-  margin: 0 auto;
-  background-color: $color-light-green;
-
-  img {
-    width: 100%;
-  }
-
-  &-text {
-    padding: 2rem 4rem;
-  }
-
-  &-title {
-    font-size: $fs-large;
-    margin-bottom: 1rem;
-  }
+  background-color: $color-secondery;
 
   &-description {
-    color: $color-gray;
+    line-height: 2;
+    color: $color-black;
     font-size: $fs-small;
   }
 
   &-subtitle {
     text-transform: uppercase;
-    color: $color-accent;
+    color: $color-primary;
+    font-weight: bold;
     &::after {
-      width: 140px;
+      width: 130px;
       height: 5px;
       content: '';
-      background-color: $color-accent;
+      background-color: $color-primary;
       display: block;
     }
   }
 
-  &-author {
+  .team {
+    text-align: center;
+    font-weight: bold;
+
     img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin-right: 1rem;
+      width: 100px;
+      height: 100px;
     }
 
-    p {
-      margin: 0;
+    h4 {
       color: $color-primary;
-      font-weight: bold;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
     }
   }
 }
 
 /* testimonials section styles */
 .testimonials {
-  background-color: $color-secondery;
+  background-color: $color-white;
 
   &-item {
     text-align: center;
@@ -279,7 +299,7 @@ ul {
     }
 
     &-text {
-      color: $color-gray;
+      color: $color-black;
     }
 
     &-quote {
@@ -294,11 +314,15 @@ ul {
 
 /* pricing section styles */
 .price {
-  background: $color-light-green;
+  background: $color-primary;
   text-align: center;
 
   &-top {
-    color: $color-primary;
+    color: $color-white;
+
+    p {
+      color: $color-black;
+    }
   }
 
   .section-title {
@@ -311,16 +335,16 @@ ul {
     width: 250px;
     margin: 1rem auto;
     padding: 2rem 1rem;
-    background-color: $color-primary;
-    color: $color-secondery;
+    background-color: $color-secondery;
+    color: $color-white;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background-color: $color-accent;
-      color: $color-white;
+      background-color: $color-sec-primary;
+      color: $color-black;
     }
   }
 
@@ -330,8 +354,8 @@ ul {
     text-align: center;
     border-radius: 50%;
     margin: 1rem auto;
-    background-color: $color-secondery;
-    color: $color-primary;
+    background-color: $color-white;
+    color: $color-secondery;
   }
 
   &-type {
@@ -349,8 +373,7 @@ ul {
     border-color: $color-primary;
 
     &:hover {
-      background-color: $color-primary;
-      color: $color-white;
+      color: $color-primary;
       border-color: $color-primary;
     }
   }
@@ -390,27 +413,29 @@ ul {
 /*footer styles*/
 .footer {
   background-color: $color-primary;
-  color: $color-white;
+  color: $color-secondery;
+  font-weight: bold;
 
   &-logo {
-    color: $color-secondery;
+    color: $color-black;
   }
 
   &-links-title {
-    color: $color-white;
+    color: $color-black;
     margin-bottom: 0;
   }
 
   &-link a {
-    color: $color-gray;
+    color: $color-secondery;
     text-decoration: none;
+    font-weight: bold;
 
     &:hover {
-      color: $color-secondery;
+      color: $color-sec-primary;
     }
   }
 
-  &-social {
+  .social {
     margin: 2rem 0;
     display: flex;
     align-items: center;
@@ -423,48 +448,18 @@ ul {
       display: inline-block;
       padding: 0.5rem 0.8rem;
       margin: 0 0.5rem;
-      background-color: $color-white;
-      color: $color-accent;
+      background-color: $color-secondery;
+      color: $color-white;
       border-radius: 50%;
       border: 2px solid $color-secondery;
       font-size: 1.3rem;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $color-accent;
+        background-color: $color-white;
         color: $color-secondery;
         border-color: $color-secondery;
       }
-    }
-  }
-} /*media queries*/
-@media screen and (max-width: 1000px) {
-  .hero {
-    img {
-      width: 100%;
-    }
-
-    &-text {
-      padding-right: 0;
-      padding-bottom: 5rem;
-      text-align: center;
-    }
-  }
-
-  .collapse.navbar-collapse,
-  .navbar-collapse.collapsing {
-    background-color: $color-secondery;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-
-    a {
-      color: $color-primary;
-    }
-
-    a.active {
-      color: $color-black;
     }
   }
 }
