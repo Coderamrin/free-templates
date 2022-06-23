@@ -13,7 +13,7 @@ function displayPorjects(projects) {
     const projectItem = document.createElement('div');
     projectItem.classList.add('col-lg-4', 'mb-5');
 
-    projectItem.innerHTML = `<div class="project-item">
+    projectItem.innerHTML = `<div class="project-item" id=${project.id}>
                     <div class="project-image">
                         <img src=${project.img} alt="">
                     </div>

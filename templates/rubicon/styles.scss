@@ -1,12 +1,10 @@
 //color variables
-$color-primary: #ff5200;
-$color-secondery: #f6b69c;
-$color-accent: #ffe7d5;
+$color-primary: #590696;
+$color-secondery: #b80080;
+$color-accent: #fff0d7;
+$color-orange: #ff5200;
 $color-black: #000;
 $color-white: #fff;
-
-//delete
-$color-sec-primary: #c8fcea;
 
 //fontsize variables
 $fs-xxlarge: 3.75rem;
@@ -82,17 +80,13 @@ ul {
 .social {
   a {
     display: inline-block;
-    padding: 0.3rem 0.6rem;
     margin: 0 0.2rem;
-    color: $color-white;
-    background-color: $color-primary;
+    color: $color-orange;
     border-radius: 50%;
-    border: 2px solid $color-primary;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: $color-secondery;
       color: $color-primary;
       border-color: $color-primary;
     }
@@ -160,6 +154,20 @@ ul {
   right: 0;
 }
 
+.navbar-toggler {
+  padding: 0.2rem;
+  outline: none;
+  &-line {
+    width: 45px;
+    height: 5px;
+    background-color: wheat;
+    display: block;
+    &:nth-child(2) {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
 /* hero styles */
 .hero {
   background-color: $color-primary;
@@ -169,7 +177,7 @@ ul {
   overflow: hidden;
 
   &-text {
-    padding-bottom: 1rem;
+    padding: 2rem 1rem;
   }
 
   &-title {
@@ -181,7 +189,7 @@ ul {
   &-description {
     font-size: $fs-small;
     margin-bottom: 1rem;
-    color: $color-secondery;
+    color: $color-accent;
   }
 
   &-btn {
@@ -245,24 +253,31 @@ ul {
 
 /* about section styles */
 .about {
-  background-color: $color-secondery;
+  background-color: $color-white;
 
-  &-description {
-    line-height: 2;
-    color: $color-black;
-    font-size: $fs-small;
-  }
-
-  &-subtitle {
+  &-title {
     text-transform: uppercase;
-    color: $color-primary;
+    color: $color-orange;
     font-weight: bold;
     &::after {
       width: 130px;
       height: 5px;
       content: '';
-      background-color: $color-primary;
+      background-color: $color-orange;
       display: block;
+    }
+  }
+
+  &-description {
+    line-height: 1.8;
+    color: $color-black;
+    font-size: $fs-small;
+  }
+
+  &-img {
+    img {
+      width: 100%;
+      border-radius: 0.5rem;
     }
   }
 
@@ -270,6 +285,20 @@ ul {
     text-align: center;
     font-weight: bold;
     margin-bottom: 2rem;
+    width: 200px;
+
+    &-title {
+      text-transform: uppercase;
+      color: $color-orange;
+      padding-bottom: 1rem;
+      &::after {
+        width: 130px;
+        height: 5px;
+        content: '';
+        background-color: $color-orange;
+        display: block;
+      }
+    }
 
     img {
       width: 100px;
@@ -277,9 +306,10 @@ ul {
     }
 
     h4 {
-      color: $color-primary;
+      color: $color-orange;
       margin-top: 0.5rem;
       margin-bottom: 0;
+      font-weight: bold;
     }
   }
 }
@@ -294,6 +324,7 @@ ul {
 
   &-item {
     text-align: center;
+    padding: 2rem;
 
     &-avatar {
       width: 150px;
@@ -332,9 +363,11 @@ ul {
   }
 
   .section-title {
+    color: $color-orange;
+
     &::after {
       width: 100px;
-      background-color: $color-secondery;
+      background-color: $color-orange;
     }
   }
 
@@ -342,8 +375,8 @@ ul {
     width: 250px;
     margin: 1rem auto;
     padding: 2rem 1rem;
-    background-color: $color-secondery;
-    color: $color-primary;
+    background-color: $color-orange;
+    color: $color-black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
@@ -361,7 +394,7 @@ ul {
     border-radius: 50%;
     margin: 1rem auto;
     background-color: $color-white;
-    color: $color-secondery;
+    color: $color-black;
   }
 
   &-type {
@@ -374,9 +407,10 @@ ul {
   }
 
   &-btn {
-    background-color: $color-white;
-    color: $color-primary;
+    background-color: $color-primary;
+    color: $color-white;
     border-color: $color-primary;
+    margin-top: 1rem;
 
     &:hover {
       color: $color-white;
@@ -437,7 +471,7 @@ ul {
 /*footer styles*/
 .footer {
   background-color: $color-primary;
-  color: $color-secondery;
+  color: $color-accent;
 
   &-links-title {
     color: $color-accent;
@@ -446,9 +480,13 @@ ul {
   }
 
   &-link a {
-    color: $color-secondery;
+    color: $color-accent;
     text-decoration: none;
     font-weight: bold;
+
+    &:hover {
+      color: $color-orange;
+    }
   }
 
   .social {
@@ -464,17 +502,17 @@ ul {
       display: inline-block;
       padding: 0.5rem 0.8rem;
       margin: 0 0.5rem;
-      background-color: $color-secondery;
+      background-color: $color-orange;
       color: $color-white;
       border-radius: 50%;
-      border: 2px solid $color-secondery;
+      border: 2px solid $color-orange;
       font-size: 1.3rem;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $color-white;
+        background-color: $color-accent;
         color: $color-secondery;
-        border-color: $color-secondery;
+        border-color: $color-accent;
       }
     }
   }

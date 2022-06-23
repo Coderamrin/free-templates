@@ -3,6 +3,15 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/supreme.png',
+    title: 'Supreme',
+    description:
+      'Supreme is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}supreme/index.html`,
+    download: `${downloadURL}rzjkj`,
+    id: '04',
+  },
+  {
     img: 'images/template-img/prevail.png',
     title: 'Prevail',
     description:
