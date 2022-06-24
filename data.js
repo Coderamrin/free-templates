@@ -3,6 +3,16 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/artificial.png',
+    title: 'Artificial',
+    description:
+      'Artificial is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}artificial/index.html`,
+    download: `${downloadURL}cqlnm`,
+    id: '05',
+    tag: 'agency',
+  },
+  {
     img: 'images/template-img/supreme.png',
     title: 'Supreme',
     description:
@@ -10,6 +20,7 @@ const projectData = [
     live: `${liveUrl}supreme/index.html`,
     download: `${downloadURL}rzjkj`,
     id: '04',
+    tag: 'agency',
   },
   {
     img: 'images/template-img/prevail.png',
@@ -19,6 +30,7 @@ const projectData = [
     live: `${liveUrl}prevail/index.html`,
     download: `${downloadURL}vkbziq`,
     id: '03',
+    tag: 'agency',
   },
   {
     img: 'images/template-img/traack.png',
@@ -28,6 +40,7 @@ const projectData = [
     live: `${liveUrl}traack/index.html`,
     download: `${downloadURL}cmfud`,
     id: '02',
+    tag: 'App',
   },
   {
     img: 'images/template-img/moore.png',
@@ -37,5 +50,6 @@ const projectData = [
     live: `${liveUrl}moore/index.html`,
     download: `${downloadURL}tdqbb`,
     id: '01',
+    tag: 'App',
   },
 ];
