@@ -3,6 +3,16 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/rubicon.png',
+    title: 'Rubicon',
+    description:
+      'Rubicon is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}rubicon/index.html`,
+    download: `${downloadURL}bimtd`,
+    id: '06',
+    tag: 'agency',
+  },
+  {
     img: 'images/template-img/artificial.png',
     title: 'Artificial',
     description:

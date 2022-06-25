@@ -1,9 +1,11 @@
 //color variables
-$color-primary: #070f4e;
-$color-secondery: #ddeef1;
-$color-accent: #5dfbd7;
+$color-primary: #2b6777;
+$color-secondery: #c1faff;
+$color-accent: #f99136;
 $color-black: #000;
 $color-white: #fff;
+
+$color-orange: #ff5200;
 
 //fontsize variables
 $fs-xxlarge: 3.75rem;
@@ -40,13 +42,14 @@ ul {
 
 .section {
   &-top {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
   }
 
   &-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    color: $color-primary;
 
     &::after {
       width: 140px;
@@ -80,14 +83,14 @@ ul {
   a {
     display: inline-block;
     margin: 0 0.2rem;
-    color: $color-primary;
+    color: $color-orange;
     border-radius: 50%;
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $color-accent;
-      border-color: $color-accent;
+      color: $color-primary;
+      border-color: $color-primary;
     }
   }
 }
@@ -97,14 +100,13 @@ ul {
 }
 
 /* nav styles */
-
 .navbar {
   background-color: $color-primary;
   color: $color-secondery;
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 0;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in;
 
   &-brand {
     font-size: 1.5rem;
@@ -118,8 +120,8 @@ ul {
 
   &.scrolled {
     background-color: $color-primary;
-    transition: all 0.5s ease-in;
     padding: 0.3rem 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -152,7 +154,7 @@ ul {
   height: 100vh;
   top: 100%;
   right: 200%;
-  transition: right 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 0 1rem;
   background: $color-primary;
 }
@@ -177,10 +179,11 @@ ul {
 
 /* hero styles */
 .hero {
-  background: url('../images/hero-bg.png');
+  background-color: $color-primary;
   color: $color-secondery;
-  padding: 13rem 0;
+  padding: 10rem 0;
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 
   &-title {
     font-size: $fs-xxlarge;
@@ -191,26 +194,24 @@ ul {
   &-description {
     font-size: $fs-small;
     margin-bottom: 1rem;
-    color: $color-white;
   }
 
   &-btn {
     font-size: $fs-small;
+    margin-top: 1rem;
+  }
+
+  &-img {
+    img {
+      width: 130%;
+    }
   }
 }
 
 /* features section styles */
 .services {
   background: $color-secondery;
-
-  h2,
-  h3 {
-    color: $color-primary;
-  }
-
-  p {
-    color: $color-black;
-  }
+  color: $color-primary;
 
   &-item {
     width: 315px;
@@ -218,7 +219,7 @@ ul {
     padding: 2rem 1rem;
     margin: 1rem auto;
     box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
-    transition: transform 0.3s;
+    transition: transform 0.5s;
 
     &:hover {
       transform: scale(1.02);
@@ -254,25 +255,23 @@ ul {
 
 /* about section styles */
 .about {
-  background-color: $color-primary;
+  background-color: $color-white;
+  color: $color-primary;
 
   &-title {
     text-transform: uppercase;
-    color: $color-accent;
     font-weight: bold;
-    padding-bottom: 0.5rem;
     &::after {
       width: 130px;
       height: 5px;
       content: '';
-      background-color: $color-accent;
+      background-color: $color-primary;
       display: block;
     }
   }
 
   &-description {
-    line-height: 1.5;
-    color: $color-secondery;
+    line-height: 1.8;
     font-size: $fs-small;
   }
 
@@ -284,8 +283,10 @@ ul {
   }
 }
 
+/*Team section styles*/
 .team {
   color: $color-primary;
+  background-color: $color-secondery;
   &-item {
     text-align: center;
     font-weight: bold;
@@ -299,20 +300,25 @@ ul {
     margin-bottom: 0;
     font-weight: bold;
   }
+
+  .social {
+    a {
+      color: $color-primary;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
 }
 
 /* testimonials section styles */
 .testimonials {
-  background-color: $color-primary;
-
-  &-title {
-    color: $color-secondery;
-  }
+  background-color: $color-white;
+  color: $color-primary;
 
   &-item {
     text-align: center;
     padding: 2rem;
-    color: $color-secondery;
 
     &-avatar {
       width: 150px;
@@ -324,14 +330,20 @@ ul {
 
     &-author {
       font-weight: bold;
+      color: $color-primary;
+      margin: 0;
     }
 
     &-quote {
       font-size: $fs-large;
-      color: $color-secondery;
+      color: $color-accent;
       position: relative;
       top: 0rem;
       left: 0rem;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
@@ -343,6 +355,15 @@ ul {
 
   &-top {
     color: $color-primary;
+  }
+
+  .section-title {
+    color: $color-primary;
+
+    &::after {
+      width: 100px;
+      background-color: $color-primary;
+    }
   }
 
   &-item {
@@ -357,8 +378,7 @@ ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     &:hover {
-      background-color: $color-white;
-      color: $color-primary;
+      background-color: $color-accent;
     }
   }
 
@@ -369,7 +389,7 @@ ul {
     border-radius: 50%;
     margin: 1rem auto;
     background-color: $color-secondery;
-    color: $color-primary;
+    color: $color-black;
   }
 
   &-type {
@@ -382,20 +402,19 @@ ul {
   }
 
   &-btn {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $color-secondery;
+    color: $color-primary;
     border-color: $color-secondery;
     margin-top: 1rem;
 
     &:hover {
-      color: $color-primary;
+      color: $color-white;
       border-color: $color-primary;
     }
   }
 }
 
 /*contact section styles*/
-
 .contact {
   font-size: 1.2rem;
   color: $color-black;
@@ -408,7 +427,6 @@ ul {
   input {
     border-radius: 50px;
     padding: 1rem 1.4rem;
-    color: $color-secondery;
   }
 
   .btn {
@@ -420,7 +438,7 @@ ul {
 
     &:hover {
       color: $color-primary;
-      background-color: transparent;
+      background-color: $color-white;
     }
   }
 }
@@ -435,12 +453,11 @@ ul {
 
   button {
     background-color: $color-primary;
-    color: $color-accent;
-    border-color: $color-primary;
+    color: $color-secondery;
+    border-color: $color-secondery;
 
     &:hover {
       color: $color-primary;
-      background-color: transparent;
       border-color: $color-primary;
     }
   }
@@ -452,18 +469,18 @@ ul {
   color: $color-secondery;
 
   &-links-title {
-    color: $color-secondery;
+    color: $color-white;
     margin-bottom: 0;
     font-weight: bold;
   }
 
   &-link a {
-    color: $color-accent;
+    color: $color-secondery;
     text-decoration: none;
     font-weight: bold;
 
     &:hover {
-      color: $color-secondery;
+      color: $color-accent;
     }
   }
 
@@ -481,20 +498,15 @@ ul {
       padding: 0.5rem 0.8rem;
       margin: 0 0.5rem;
       background-color: $color-secondery;
-      color: $color-white;
+      color: $color-primary;
       border-radius: 50%;
       border: 2px solid $color-secondery;
       font-size: 1.3rem;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $color-accent;
+        background-color: transparent;
         color: $color-secondery;
-        border-color: $color-accent;
-      }
-
-      i {
-        color: $color-primary;
       }
     }
   }
@@ -510,15 +522,5 @@ ul {
     display: inline-block;
     position: static;
     height: auto;
-    background: transparent;
-  }
-
-  .navbar {
-    background: transparent;
-  }
-
-  .login-nav,
-  .signup-nav {
-    background-color: $color-primary;
   }
 }

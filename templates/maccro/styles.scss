@@ -1,7 +1,8 @@
 //color variables
-$color-primary: #070f4e;
-$color-secondery: #ddeef1;
-$color-accent: #5dfbd7;
+$color-primary: #ed7966;
+$color-secondery: #95574c;
+$color-accent: #005c6c;
+$color-light-pink: #ffe5db;
 $color-black: #000;
 $color-white: #fff;
 
@@ -40,13 +41,14 @@ ul {
 
 .section {
   &-top {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
   }
 
   &-title {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    color: $color-primary;
 
     &::after {
       width: 140px;
@@ -80,31 +82,30 @@ ul {
   a {
     display: inline-block;
     margin: 0 0.2rem;
-    color: $color-primary;
+    color: $color-accent;
     border-radius: 50%;
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: $color-accent;
-      border-color: $color-accent;
+      color: $color-primary;
+      border-color: $color-primary;
     }
   }
 }
 
 .highlighted-text {
-  color: $color-accent;
+  color: $color-light-pink;
 }
 
 /* nav styles */
-
 .navbar {
   background-color: $color-primary;
   color: $color-secondery;
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 0;
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease-in;
 
   &-brand {
     font-size: 1.5rem;
@@ -118,8 +119,8 @@ ul {
 
   &.scrolled {
     background-color: $color-primary;
-    transition: all 0.5s ease-in;
     padding: 0.3rem 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -152,7 +153,7 @@ ul {
   height: 100vh;
   top: 100%;
   right: 200%;
-  transition: right 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 0 1rem;
   background: $color-primary;
 }
@@ -177,39 +178,43 @@ ul {
 
 /* hero styles */
 .hero {
-  background: url('../images/hero-bg.png');
-  color: $color-secondery;
-  padding: 13rem 0;
+  background-color: $color-primary;
+  padding: 10rem 0;
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 
   &-title {
     font-size: $fs-xxlarge;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: $color-secondery;
   }
 
   &-description {
     font-size: $fs-small;
     margin-bottom: 1rem;
-    color: $color-white;
+    color: $color-light-pink;
   }
 
   &-btn {
     font-size: $fs-small;
+    margin-top: 1rem;
+  }
+
+  &-img {
+    img {
+      width: 130%;
+    }
   }
 }
 
 /* features section styles */
 .services {
   background: $color-secondery;
-
-  h2,
-  h3 {
-    color: $color-primary;
-  }
+  color: $color-primary;
 
   p {
-    color: $color-black;
+    color: $color-light-pink;
   }
 
   &-item {
@@ -217,13 +222,13 @@ ul {
     text-align: center;
     padding: 2rem 1rem;
     margin: 1rem auto;
-    box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
-    transition: transform 0.3s;
+    box-shadow: 0 0.1rem 0.5rem rgba(201, 200, 200, 0.308);
+    transition: transform 0.5s;
 
     &:hover {
       transform: scale(1.02);
       cursor: pointer;
-      box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
+      box-shadow: 0 0.1rem 0.5rem rgba(248, 247, 247, 0.308);
     }
   }
 
@@ -241,9 +246,9 @@ ul {
   &-item-btn {
     padding: 0.5rem 1.5rem;
     margin-top: 1rem;
-    border: 2px solid $color-primary;
-    background-color: $color-primary;
-    color: $color-white;
+    border: 2px solid $color-white;
+    background-color: $color-white;
+    color: $color-secondery;
 
     &:hover {
       color: $color-primary;
@@ -254,26 +259,25 @@ ul {
 
 /* about section styles */
 .about {
-  background-color: $color-primary;
+  background-color: $color-light-pink;
+  color: $color-primary;
 
   &-title {
     text-transform: uppercase;
-    color: $color-accent;
     font-weight: bold;
-    padding-bottom: 0.5rem;
     &::after {
       width: 130px;
       height: 5px;
       content: '';
-      background-color: $color-accent;
+      background-color: $color-primary;
       display: block;
     }
   }
 
   &-description {
-    line-height: 1.5;
-    color: $color-secondery;
+    line-height: 1.6;
     font-size: $fs-small;
+    color: #3c140e;
   }
 
   &-img {
@@ -284,8 +288,9 @@ ul {
   }
 }
 
+/*Team section styles*/
 .team {
-  color: $color-primary;
+  background-color: $color-white;
   &-item {
     text-align: center;
     font-weight: bold;
@@ -299,20 +304,25 @@ ul {
     margin-bottom: 0;
     font-weight: bold;
   }
+
+  .social {
+    a {
+      color: $color-primary;
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
 }
 
 /* testimonials section styles */
 .testimonials {
   background-color: $color-primary;
-
-  &-title {
-    color: $color-secondery;
-  }
+  color: $color-secondery;
 
   &-item {
     text-align: center;
     padding: 2rem;
-    color: $color-secondery;
 
     &-avatar {
       width: 150px;
@@ -324,25 +334,41 @@ ul {
 
     &-author {
       font-weight: bold;
+      color: $color-secondery;
+      margin: 0;
     }
 
     &-quote {
       font-size: $fs-large;
-      color: $color-secondery;
+      color: $color-light-pink;
       position: relative;
       top: 0rem;
       left: 0rem;
+    }
+
+    p {
+      margin: 0;
+      color: $color-black;
     }
   }
 }
 
 /* pricing section styles */
 .price {
-  background: $color-secondery;
+  background: $color-light-pink;
   text-align: center;
 
   &-top {
     color: $color-primary;
+  }
+
+  .section-title {
+    color: $color-primary;
+
+    &::after {
+      width: 100px;
+      background-color: $color-primary;
+    }
   }
 
   &-item {
@@ -350,7 +376,7 @@ ul {
     margin: 1rem auto;
     padding: 2rem 1rem;
     background-color: $color-primary;
-    color: $color-secondery;
+    color: $color-light-pink;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
@@ -358,7 +384,7 @@ ul {
 
     &:hover {
       background-color: $color-white;
-      color: $color-primary;
+      color: $color-secondery;
     }
   }
 
@@ -369,7 +395,7 @@ ul {
     border-radius: 50%;
     margin: 1rem auto;
     background-color: $color-secondery;
-    color: $color-primary;
+    color: $color-light-pink;
   }
 
   &-type {
@@ -382,33 +408,27 @@ ul {
   }
 
   &-btn {
-    background-color: $color-primary;
-    color: $color-white;
+    background-color: $color-secondery;
+    color: $color-primary;
     border-color: $color-secondery;
     margin-top: 1rem;
 
     &:hover {
-      color: $color-primary;
-      border-color: $color-primary;
+      color: $color-secondery;
+      border-color: $color-secondery;
     }
   }
 }
 
 /*contact section styles*/
-
 .contact {
   font-size: 1.2rem;
-  color: $color-black;
-  background-color: $color-white;
-
-  h2 {
-    color: $color-primary;
-  }
+  color: $color-light-pink;
+  background-color: $color-secondery;
 
   input {
     border-radius: 50px;
     padding: 1rem 1.4rem;
-    color: $color-secondery;
   }
 
   .btn {
@@ -420,7 +440,7 @@ ul {
 
     &:hover {
       color: $color-primary;
-      background-color: transparent;
+      background-color: $color-white;
     }
   }
 }
@@ -435,12 +455,11 @@ ul {
 
   button {
     background-color: $color-primary;
-    color: $color-accent;
-    border-color: $color-primary;
+    color: $color-secondery;
+    border-color: $color-secondery;
 
     &:hover {
       color: $color-primary;
-      background-color: transparent;
       border-color: $color-primary;
     }
   }
@@ -452,18 +471,18 @@ ul {
   color: $color-secondery;
 
   &-links-title {
-    color: $color-secondery;
+    color: $color-white;
     margin-bottom: 0;
     font-weight: bold;
   }
 
   &-link a {
-    color: $color-accent;
+    color: $color-secondery;
     text-decoration: none;
     font-weight: bold;
 
     &:hover {
-      color: $color-secondery;
+      color: $color-accent;
     }
   }
 
@@ -481,20 +500,15 @@ ul {
       padding: 0.5rem 0.8rem;
       margin: 0 0.5rem;
       background-color: $color-secondery;
-      color: $color-white;
+      color: $color-primary;
       border-radius: 50%;
       border: 2px solid $color-secondery;
       font-size: 1.3rem;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: $color-accent;
+        background-color: transparent;
         color: $color-secondery;
-        border-color: $color-accent;
-      }
-
-      i {
-        color: $color-primary;
       }
     }
   }
@@ -510,15 +524,5 @@ ul {
     display: inline-block;
     position: static;
     height: auto;
-    background: transparent;
-  }
-
-  .navbar {
-    background: transparent;
-  }
-
-  .login-nav,
-  .signup-nav {
-    background-color: $color-primary;
   }
 }
