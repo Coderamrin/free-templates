@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webdesignery | Agency Landing Page</title>
+  <title>Outright | Agency Landing Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><span class="highlighted-text">Webde</span>signery</a>
+        <a class="navbar-brand" href="index.html"><span class="highlighted-text">OUT</span>RIGHT</a>
         <button class="navbar-toggler" type="button" id="navbarNavBtn" data-bs-toggle="collapse"
           data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <div class="navbar-toggler">
@@ -54,19 +54,24 @@
   </header>
   <!-- Header End -->
 
+
   <!-- Hero Start -->
   <section class="hero">
-    <div class="container ">
-      <div class="row align-items-center justify-content-center">
-        <div class="hero-text text-center col-lg-8">
-          <h1 class="hero-title">Lorem Ipsum is simply dummy services.
-          </h1>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="hero-text col-lg-6 pb-7">
+          <h1 class="hero-title">Lorem Ipsum is simply<span class="highlighted-text">
+              dummy services.
+            </span></h1>
           <p class="hero-description">
             It is a long established fact that a reader will be distracted by the readable content of a page when It is
             a long established fact that a reader
           </p>
 
-          <a class="btn hero-btn" href="#contact">Learn More</a>
+          <a class="btn hero-btn" href="#services">Learn More</a>
+        </div>
+        <div class="hero-img col-lg-5">
+          <img src="./images/hero-img.png" alt="" />
         </div>
       </div>
     </div>
@@ -136,7 +141,7 @@
             magnam quae?
           </p>
 
-          <a href="#team" class="btn about-btn">Learn More</a>
+          <a class="btn hero-btn" href="#counter">Learn More</a>
         </div>
 
         <div class="about-img col-md-5">
@@ -146,6 +151,35 @@
     </div>
   </section>
   <!-- About End -->
+
+  <!--Counter Start-->
+  <div class="counter" id="counter">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-md-2 counter-item">
+          <h4 class="counter-item-number">2000</h4>
+          <p class="counter-item-title">Customers</p>
+        </div>
+        <div class="col-md-2 counter-item">
+          <h4 class="counter-item-number">50</h4>
+          <p class="counter-item-title">Countries</p>
+        </div>
+        <div class="col-md-2 counter-item">
+          <h4 class="counter-item-number">20</h4>
+          <p class="counter-item-title">Loremipsum </p>
+        </div>
+        <div class="col-md-2 counter-item">
+          <h4 class="counter-item-number">100</h4>
+          <p class="counter-item-title">consectetur</p>
+        </div>
+        <div class="col-md-2 counter-item">
+          <h4 class="counter-item-number">300</h4>
+          <p class="counter-item-title">adipisicing</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Counter End-->
 
   <!--Team Start-->
   <section class="team py-5" id="team">
@@ -220,7 +254,7 @@
   <section class="testimonials section py-5">
     <div class="section-top testimonial-top py-5 mb-4">
       <h2 class="section-title testimonials-title">
-        Testimonials
+        What our clients says
       </h2>
     </div>
 
@@ -231,6 +265,7 @@
           <h4 class="testimonials-item-author">
             Jhon Smith
           </h4>
+          <p class="testimonials-item-author">CEO @futurede </p>
           <p class="testimonials-item-text">
             <i class="fas fa-quote-left testimonials-item-quote testimonials-item-quote"></i> Lorem Ipsum is simply
             dummy text of the printing
@@ -243,6 +278,7 @@
           <h4 class="testimonials-item-author">
             Jhon Smith
           </h4>
+          <p class="testimonials-item-author">Community Manager @futurede </p>
           <p class="testimonials-item-text">
             <i class="fas fa-quote-left testimonials-item-quote testimonials-item-quote"></i> Lorem Ipsum is simply
             dummy text of the printing
@@ -255,6 +291,8 @@
           <h4 class="testimonials-item-author">
             Jhon Smith
           </h4>
+          <p class="testimonials-item-author">CFO @AmazingCorp </p>
+
           <p class="testimonials-item-text">
             <i class="fas fa-quote-left testimonials-item-quote testimonials-item-quote"></i> Lorem Ipsum is simply
             dummy text of the printing
@@ -266,6 +304,57 @@
     </div>
   </section>
   <!--Testimonials End-->
+
+  <!--Projects Start-->
+  <div class="projects section py-5">
+
+    <div class="container">
+      <div class="section-top testimonial-top py-5 mb-4">
+        <h2 class="section-title testimonials-title">
+          Projects We Completed
+        </h2>
+
+        <p> Cumque ratione magnam excepturi odio et labore quibusdam beatae repudiandae nostrum laborum eius non, natus
+          deserunt.
+        </p>
+      </div>
+
+      <div class="tabs-container">
+        <nav>
+          <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all"
+              type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+
+            <button class="nav-link" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button"
+              role="tab" aria-controls="nav-design" aria-selected="false">Design</button>
+
+            <button class="nav-link" id="nav-dev-tab" data-bs-toggle="tab" data-bs-target="#nav-dev" type="button"
+              role="tab" aria-controls="nav-dev" aria-selected="false">Developement</button>
+
+            <button class="nav-link" id="nav-seo-tab" data-bs-toggle="tab" data-bs-target="#nav-seo" type="button"
+              role="tab" aria-controls="nav-seo" aria-selected="false">SEO</button>
+          </div>
+        </nav>
+        <div class="tab-content row" id="nav-tabContent">
+          <div class="tab-pane fade active show col-md-4" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+            <img src="./images/project-1.png" alt="">
+          </div>
+          <div class="tab-pane fade col-md-4" id="nav-design" role="tabpanel" aria-labelledby="nav-design-tab">
+            <img src="./images/project-2.png" alt="">
+          </div>
+
+          <div class="tab-pane fade col-md-4" id="nav-dev" role="tabpanel" aria-labelledby="nav-dev-tab">
+            <img src="./images/project-3.png" alt="">
+          </div>
+
+          <div class="tab-pane fade col-md-4" id="nav-seo" role="tabpanel" aria-labelledby="nav-seo-tab">
+            <img src="./images/project-4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Projects End-->
 
   <!-- Price Start -->
   <section class="price section py-5" id="pricing">
@@ -358,7 +447,7 @@
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="col-md-4">
-          <a class="navbar-brand footer-logo" href="index.html">RUBI<span class="highlighted-text">CON</span></a>
+          <a class="navbar-brand footer-logo" href="index.html">OUT<span class="highlighted-text">RIGHT</span></a>
           <p class="footer-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
             quia reiciendis ipsum, harum maiores facilis
