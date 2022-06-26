@@ -3,11 +3,21 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/webdesignery.png',
+    title: 'Webdesignery',
+    description:
+      'Webdesignery is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}webdesignery/`,
+    download: `${downloadURL}egpmx`,
+    id: '07',
+    tag: 'agency',
+  },
+  {
     img: 'images/template-img/rubicon.png',
     title: 'Rubicon',
     description:
       'Rubicon is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}rubicon/index.html`,
+    live: `${liveUrl}rubicon/`,
     download: `${downloadURL}bimtd`,
     id: '06',
     tag: 'agency',
@@ -17,7 +27,7 @@ const projectData = [
     title: 'Artificial',
     description:
       'Artificial is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}artificial/index.html`,
+    live: `${liveUrl}artificial/`,
     download: `${downloadURL}cqlnm`,
     id: '05',
     tag: 'agency',
@@ -27,7 +37,7 @@ const projectData = [
     title: 'Supreme',
     description:
       'Supreme is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}supreme/index.html`,
+    live: `${liveUrl}supreme/`,
     download: `${downloadURL}rzjkj`,
     id: '04',
     tag: 'agency',
@@ -37,7 +47,7 @@ const projectData = [
     title: 'Prevail',
     description:
       'Prevail is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}prevail/index.html`,
+    live: `${liveUrl}prevail/`,
     download: `${downloadURL}vkbziq`,
     id: '03',
     tag: 'agency',
@@ -47,7 +57,7 @@ const projectData = [
     title: 'Traack',
     description:
       'Traack is a responsive landing page template for Mobile App, built with bootstrap 5 and SaSS',
-    live: `${liveUrl}traack/index.html`,
+    live: `${liveUrl}traack/`,
     download: `${downloadURL}cmfud`,
     id: '02',
     tag: 'App',
@@ -57,9 +67,11 @@ const projectData = [
     title: 'Moore',
     description:
       'Moore is a responsive landing page template for Mobile App, built with bootstrap 5 and SaSS',
-    live: `${liveUrl}moore/index.html`,
+    live: `${liveUrl}moore/`,
     download: `${downloadURL}tdqbb`,
     id: '01',
     tag: 'App',
   },
 ];
+
+//rush, maccro, webdesignery, outright
