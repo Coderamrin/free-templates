@@ -3,6 +3,16 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/maccro.png',
+    title: 'Maccro',
+    description:
+      'Maccro is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}maccro/`,
+    download: `${downloadURL}lsnlb`,
+    id: '08',
+    tag: 'agency',
+  },
+  {
     img: 'images/template-img/webdesignery.png',
     title: 'Webdesignery',
     description:

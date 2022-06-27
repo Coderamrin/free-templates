@@ -320,7 +320,6 @@ ul {
 
 /* testimonials section styles */
 .testimonials {
-  background-color: #edeeff;
   color: #28002c;
 }
 
@@ -353,6 +352,43 @@ ul {
 
 .testimonials-item p {
   margin: 0;
+}
+
+/*projects section styles*/
+.projects {
+  background-color: #edeeff;
+  padding: 8rem 0;
+}
+
+.projects-tab-btns {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.projects-tab-btn {
+  border: 0;
+  background-color: #28002c;
+  color: #edeeff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.projects-tab-btn:hover, .projects-tab-btn.active {
+  background-color: #00c896;
+  color: #28002c;
+}
+
+.projects-tab-item {
+  margin: 1rem;
+  padding: 0;
+  background-color: #edeeff;
+}
+
+.projects-tab-item img {
+  width: 100%;
 }
 
 /* pricing section styles */

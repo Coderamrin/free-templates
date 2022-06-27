@@ -329,7 +329,6 @@ ul {
 
 /* testimonials section styles */
 .testimonials {
-  background-color: $color-secondery;
   color: $color-black;
 
   &-item {
@@ -360,6 +359,44 @@ ul {
 
     p {
       margin: 0;
+    }
+  }
+}
+
+/*projects section styles*/
+.projects {
+  background-color: $color-secondery;
+  padding: 8rem 0; 
+}
+.projects-tab {
+  &-btns {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &-btn {
+    border: 0;
+    background-color: $color-black;
+    color: $color-secondery;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+
+    &:hover,
+    &.active {
+      background-color: $color-accent;
+      color: $color-black;
+    }
+  }
+
+  &-item {
+    margin: 1rem;
+    padding: 0;
+
+    background-color: $color-secondery;
+    img {
+      width: 100%;
     }
   }
 }
