@@ -1,7 +1,17 @@
-const liveUrl = 'https://free-templatess.netlify.app/templates/';
+const liveUrl = 'https://htmltemplatess.netlify.app/templates/';
 const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
+  {
+    img: 'images/template-img/outright.png',
+    title: 'Outright',
+    description:
+      'Outright is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}outright/`,
+    download: `${downloadURL}fxlne`,
+    id: '09',
+    tag: 'agency',
+  },
   {
     img: 'images/template-img/maccro.png',
     title: 'Maccro',
