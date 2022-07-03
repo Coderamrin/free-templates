@@ -1,8 +1,9 @@
 //color variables
 $color-primary: #ffffff;
-$color-secondery: #edeeff;
-$color-accent: #00c896;
-$color-black: #28002c;
+$color-secondery: #f5f5f5;
+$color-accent: #5f00ba;
+$color-text: #2f2e41;
+$color-black: #020a3b;
 $color-white: #fff;
 
 //fontsize variables
@@ -25,6 +26,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
+  color: $color-text;
 }
 
 h1,
@@ -158,11 +160,11 @@ ul {
 
 .navbar-toggler {
   padding: 0.2rem;
-  outline: none;
+  border: 0;
   &-line {
     width: 45px;
     height: 5px;
-    background-color: $color-secondery;
+    background-color: $color-black;
     display: block;
     &:nth-child(2) {
       margin: 0.5rem 0;
@@ -174,7 +176,6 @@ ul {
 .hero {
   background: url('../images/hero-bg.png') no-repeat top right;
   background-size: cover;
-  color: $color-black;
   padding: 10rem 0;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
@@ -183,6 +184,7 @@ ul {
     font-size: $fs-xxlarge;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: $color-black;
   }
 
   &-description {
@@ -196,16 +198,16 @@ ul {
   }
 
   &-img {
+    padding-top: 2rem;
     img {
-      width: 130%;
+      width: 100%;
     }
   }
 }
 
 /* features section styles */
 .services {
-  background: $color-secondery;
-  color: $color-black;
+  background: $color-white;
 
   &-item {
     width: 315px;
@@ -219,6 +221,11 @@ ul {
       transform: scale(1.02);
       cursor: pointer;
       box-shadow: 0 0.1rem 0.5rem rgba(117, 117, 117, 0.308);
+    }
+
+    h3 {
+      color: $color-black;
+      font-weight: bold;
     }
   }
 
@@ -250,24 +257,22 @@ ul {
 /* about section styles */
 .about {
   background-color: $color-white;
-  color: $color-black;
 
   &-title {
     text-transform: uppercase;
     font-weight: bold;
-    color: $color-accent;
+    color: $color-black;
     &::after {
       width: 130px;
       height: 5px;
       content: '';
-      background-color: $color-accent;
+      background-color: $color-black;
       display: block;
     }
   }
 
   &-description {
     line-height: 1.8;
-    font-size: $fs-small;
   }
 
   &-img {
@@ -280,28 +285,29 @@ ul {
 
 /*Counter section styles*/
 .counter {
-  background-color: $color-secondery;
-  padding: 5rem 0;
-  margin: 0;
+  background-color: $color-black;
+  color: $color-white;
+  padding: 5rem 2rem;
+  margin: 0 auto;
   text-align: center;
+  border-radius: 20px;
 
   &-item-number {
     font-size: $fs-xlarge;
     font-weight: bold;
     margin: 0;
-    color: $color-accent;
   }
 
   &-item-title {
-    font-weight: bold;
     text-transform: capitalize;
     font-size: $fs-small;
+    color: $color-secondery;
   }
 }
 
 /*Team section styles*/
 .team {
-  color: $color-black;
+  color: $color-text;
   background-color: $color-primary;
   &-item {
     text-align: center;
@@ -311,7 +317,7 @@ ul {
 
   //name of the team member
   h4 {
-    color: $color-accent;
+    color: $color-black;
     margin-top: 1rem;
     margin-bottom: 0;
     font-weight: bold;
@@ -319,9 +325,9 @@ ul {
 
   .social {
     a {
-      color: $color-black;
+      color: $color-accent;
       &:hover {
-        color: $color-accent;
+        color: $color-black;
       }
     }
   }
@@ -366,7 +372,7 @@ ul {
 /*projects section styles*/
 .projects {
   background-color: $color-secondery;
-  padding: 8rem 0; 
+  padding: 8rem 0;
 }
 .projects-tab {
   &-btns {
@@ -386,7 +392,7 @@ ul {
     &:hover,
     &.active {
       background-color: $color-accent;
-      color: $color-black;
+      color: $color-white;
     }
   }
 
@@ -423,16 +429,12 @@ ul {
     width: 250px;
     margin: 1rem auto;
     padding: 2rem 1rem;
-    background-color: $color-black;
-    color: $color-primary;
+    background-color: $color-white;
+    color: $color-black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    &:hover {
-      background-color: $color-accent;
-    }
   }
 
   &-icon {
@@ -462,7 +464,7 @@ ul {
 
     &:hover {
       color: $color-black;
-      border-color: $color-primary;
+      border-color: $color-black;
     }
   }
 }
@@ -472,6 +474,10 @@ ul {
   font-size: 1.2rem;
   color: $color-black;
   background-color: $color-white;
+
+  h2 {
+    color: $color-black;
+  }
 
   input {
     border-radius: 50px;
@@ -511,7 +517,6 @@ ul {
     }
   }
 }
-
 
 /*footer styles*/
 .footer {
@@ -582,5 +587,13 @@ ul {
   .login-nav,
   .signup-nav {
     background-color: $color-secondery;
+  }
+
+  .hero {
+    &-img {
+      img {
+        width: auto;
+      }
+    }
   }
 }

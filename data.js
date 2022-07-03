@@ -3,6 +3,16 @@ const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
   {
+    img: 'images/template-img/russh.png',
+    title: 'russh',
+    description:
+      'russh is a landing page template for Webdesign Agency. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}russh/`,
+    download: `${downloadURL}qswfg`,
+    id: '10',
+    tag: 'agency',
+  },
+  {
     img: 'images/template-img/outright.png',
     title: 'Outright',
     description:

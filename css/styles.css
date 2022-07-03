@@ -87,8 +87,8 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 0;
-  -webkit-transition: all 0.5 ease-in-out;
-  transition: all 0.5 ease-in-out;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .navbar-brand {
@@ -103,8 +103,6 @@ ul {
 
 .navbar.scrolled {
   background-color: #070f4e;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
   padding: 0.3rem 0;
 }
 

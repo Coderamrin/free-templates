@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Russh | App Landing Page</title>
+    <title>Abstract | App Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -18,9 +18,9 @@
 <body class="wrapper">
     <!-- Header Start -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light login-nav">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light signup-nav">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><span class="highlighted-text">RUS</span>SH</a>
+                <a class="navbar-brand" href="index.html"><span class="highlighted-text">Abs</span>Tract</a>
                 <button class="navbar-toggler" type="button" id="navbarNavBtn" data-bs-toggle="collapse"
                     data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -58,13 +58,17 @@
 
     <!-- Main Start -->
     <div class="container">
-        <div class="login row justify-content-center py-5 my-5 ">
+        <div class="signup row justify-content-center py-5 my-5">
             <div class="col-md-12 text-center py-5">
-                <h2 class="section-title">Login Now!</h2>
-                <p>Don't have an account yet? Then register <a href="signup.html"> now! </a></a></p>
+                <h2 class="section-title">Signup Now!</h2>
+                <p>Already have an Account? Then login <a href="login.html">here</a></p>
             </div>
 
             <form class="col-16 col-md-6 signup-form">
+                <div class="form-group mb-4">
+                    <input type="text" class="form-control" placeholder="Name" id="name" />
+                </div>
+
                 <div class="form-group mb-4">
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                         placeholder="Email" />
@@ -73,7 +77,7 @@
                     <input type="password" class="form-control" id="password" aria-describedby="passwordHelp"
                         placeholder="Password" />
                 </div>
-                <button type="submit" class="btn col-12">Login</button>
+                <button type="submit" class="btn col-12">Signup</button>
             </form>
         </div>
     </div>
@@ -86,8 +90,8 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-md-4">
-                    <a class="navbar-brand footer-logo" href="index.html">RUS<span
-                            class="highlighted-text">SH</span></a>
+                    <a class="navbar-brand footer-logo" href="index.html">ABS<span
+                            class="highlighted-text">TRACT</span></a>
                     <p class="footer-description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
                         quia reiciendis ipsum, harum maiores facilis
@@ -134,7 +138,9 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./library/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./library/jquery-3.6.0.min.js"></script>
+
     <script src="./script.js"></script>
 
 </body>
