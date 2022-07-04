@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>saass | Agency Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./library/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body class="wrapper">
+  <!-- Header Start -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">saass</a>
+        <button class="navbar-toggler" type="button" id="navbarNavBtn" data-bs-toggle="collapse"
+          data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="navbar-toggler">
+            <div class="navbar-toggler-line"></div>
+            <div class="navbar-toggler-line"></div>
+            <div class="navbar-toggler-line"></div>
+          </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#features">features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#process">process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#download">download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#blog">Blog</a>
+            </li>
+          </ul>
+
+          <a class="btn btn-primary nav-btn signup-btn" href="signup.html">Signup</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+
+  <!-- Hero Start -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="hero-text col-lg-7 ">
+          <h1 class="hero-title">Track Everything in one place
+          </h1>
+          <p class="hero-description">
+            It is a long established fact that a reader will be distracted by the readable content of a page when It is
+            a long established fact that a reader
+          </p>
+
+          <a class="btn hero-btn" href="#services">Learn More</a>
+        </div>
+        <div class="hero-img col-lg-12">
+          <img src="./images/hero-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+
+  <!--Card items Start-->
+  <section class="card-container py-5 intro-items">
+    <div class="container py-5">
+      <div class="row justify-content-between">
+        <div class="card-item col-md-4">
+          <div class="card-item-icon mb-3">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+        <div class="card-item col-md-4">
+          <div class="card-item-icon mb-3">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+        <div class="card-item col-md-4">
+          <div class="card-item-icon mb-3">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Card items End-->
+
+  <!--Features Start-->
+  <section class="features py-5" id="features">
+    <div class="section-top features-top py-5">
+      <p class="section-subtitle">why choose next</p>
+      <h2 class="section-title">Best Features</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo similique. Ducimus reiciendis dolor
+        explicabo non illum! Nisi
+      </p>
+    </div>
+    <div class="container pb-5">
+      <ul class="tab tab-pills mb-3" id="pills-tab" role="tablist">
+        <li class="tab-item" role="presentation">
+          <button class="tab-link active" id="pills-livechat-tab" data-bs-toggle="pill" data-bs-target="#pills-livechat"
+            type="button" role="tab" aria-controls="pills-livechat" aria-selected="true">Live Chat</button>
+        </li>
+        <li class="tab-item" role="presentation">
+          <button class="tab-link" id="pills-tracking-tab" data-bs-toggle="pill" data-bs-target="#pills-tracking"
+            type="button" role="tab" aria-controls="pills-tracking" aria-selected="true">Tracking</button>
+        </li>
+        <li class="tab-item" role="presentation">
+          <button class="tab-link" id="pills-dataflow-tab" data-bs-toggle="pill" data-bs-target="#pills-dataflow"
+            type="button" role="tab" aria-controls="pills-dataflow" aria-selected="true">Data Flow</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-livechat" role="tabpanel" aria-labelledby="pills-livechat-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-5">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Easiest possible integration
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4 class="highlighted-text">View Data</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4 class="highlighted-text">Track User Data</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-tracking" role="tabpanel" aria-labelledby="pills-tracking-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-5">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Veritatis ipsa asperiores natus
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4 class="highlighted-text">Track User</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4 class="highlighted-text">See what the user doing</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-dataflow" role="tabpanel" aria-labelledby="pills-dataflow-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-5">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Easiest possible integration
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4 class="highlighted-text">View Data</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4 class="highlighted-text">Track User Data</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Features End-->
+
+  <!--How it works Start-->
+  <section class="howWorks card-container py-5" id="process">
+    <div class="section-top howWorks-top py-5">
+      <p class="section-subtitle">how works</p>
+      <h2 class="section-title">How it works</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo similique. Ducimus reiciendis dolor
+        explicabo non illum! Nisi
+      </p>
+    </div>
+    <div class="container pb-5">
+      <div class="row justify-content-between">
+        <div class="card-item howWorks-item col-md-4">
+          <div class="card-item-icon howWorks-item-icon mb-3">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+        <div class="card-item howWorks-item col-md-4">
+          <div class="card-item-icon howWorks-item-icon mb-3">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+        <div class="card-item howWorks-item col-md-4">
+          <div class="card-item-icon howWorks-item-icon mb-3">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--How it works End-->
+
+  <!--Download Start-->
+  <section class="download" id="download">
+    <div class="section-top download-top py-5">
+      <p class="section-subtitle">download</p>
+      <h2 class="section-title download-title">Track Everything in one place</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo similique. Ducimus reiciendis dolor
+        explicabo non illum! Nisi
+      </p>
+
+      <div class="download-buttons">
+        <a class="btn" href="#downloadlink">Download Now!</a>
+        <a class="btn btn-primary" href="#pricing">Our Pricing</a>
+      </div>
+    </div>
+  </section>
+  <!--Download End-->
+
+
+  <!-- Price Start -->
+  <section class="price section py-5" id="pricing">
+    <div class="section-top price-top py-5">
+      <p class="section-subtitle">Pricing</p>
+      <h2 class="section-title">Pricing & Plans</h2>
+      <p class="section-description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sed
+        provident libero cumque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sed
+        provident libero cumque.
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row pb-5">
+        <div class="price-item col-md-4">
+          <p class="section-subtitle">free</p>
+          <h3 class="price-type">basic</h3>
+          <ul class="available-services">
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet consectetur</li>
+            <li>Lorem Ipsum has been the</li>
+          </ul>
+          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
+          <button class="btn price-btn">download Now</button>
+        </div>
+        <div class="price-item col-md-4">
+          <p class="section-subtitle">team</p>
+          <h3 class="price-type">Advance</h3>
+          <ul class="available-services">
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet consectetur</li>
+            <li>Lorem Ipsum has been the</li>
+          </ul>
+          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
+          <button class="btn price-btn">download Now</button>
+        </div>
+        <div class="price-item col-md-4">
+          <p class="section-subtitle">advance</p>
+          <h3 class="price-type">Enterprise</h3>
+          <ul class="available-services">
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet consectetur</li>
+            <li>Lorem Ipsum has been the</li>
+          </ul>
+          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
+          <button class="btn price-btn">download Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Price End -->
+
+  <!--Testimonials Start-->
+
+  <section class="testimonials py-5" id="testimonials">
+    <div class="section-top testimonials-top py-5">
+      <p class="section-subtitle">testimonials</p>
+      <h2 class="section-title">What our clients & partners Says</h2>
+      <p class="section-description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sed
+        provident libero cumque.
+      </p>
+    </div>
+    <div class="container pb-5">
+      <div class="row justify-content-center">
+        <div class="testimonials-item col-md-5">
+          <p class="testimonials-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+            vitae
+            a voluptatum totam sit aspernatur architecto.
+          </p>
+          <h4 class="highlighted-text">Sherly Smith</h4>
+          <p>CEO @Apple</p>
+          <img src="./images/testimonial-img.png" alt="">
+        </div>
+        <div class="testimonials-item col-md-5">
+          <p class="testimonials-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+            vitae
+            a voluptatum totam sit aspernatur architecto.
+          </p>
+          <h4 class="highlighted-text">David Amell</h4>
+          <p>CEO @Apple</p>
+          <img src="./images/testimonial-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Testimonials End-->
+
+  <!--Blog Start-->
+  <section class="blog" id="blog">
+    <div class="section-top blog-top pb-5">
+      <p class="section-subtitle">blog</p>
+      <h2 class="section-title">Check our latest news & articles</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla inventore libero, corrupti sapiente eius, ipsum
+        nobis atque iusto voluptatem aspernatur
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by<a href="#">Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="blog-home.html" class="btn btn-primary">Browse our blog</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Blog End-->
+
+  <!--Newsletter signup Start-->
+
+  <section class="newsletter container mb-5" id="newsletter">
+    <div>
+      <p class="subtitle">newsletter</p>
+      <h2>trusted by over 1 million people</h2>
+      <p>
+        laboriosam debitis, tempora, hic asperiores rem sit excepturi aliquid assumenda? Labore, temporibus
+        necessitatibus.
+      </p>
+
+      <form class="newsletter-form row justify-content-center">
+        <input type="email" placeholder="example@email.com" class="col-md-4" required>
+        <input href="#" class="btn submit-btn col-md-2" type="submit" />
+      </form>
+    </div>
+  </section>
+
+  <!--Newsletter signup End-->
+
+  <!-- Footer Start -->
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-4">
+          <a class="navbar-brand footer-logo" href="index.html">saass</a>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            quia reiciendis ipsum, harum maiores facilis
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <h3 class="footer-links-title">Important Links</h3>
+          <ul class="list-unstyled">
+            <li class="footer-link">
+              <a href="index.html#yourlink">Home</a>
+            </li>
+            <li class="footer-link">
+              <a href="index.html#yourlink">About</a>
+            </li>
+            <li class="footer-link">
+              <a href="index.html#yourlink">Services</a>
+            </li>
+            <li class="footer-link">
+              <a href="index.html#yourlink">Contact</a>
+            </li>
+        </div>
+
+        <div class="col-md-3">
+          <div class="social">
+            <a href="index.html#yourlink"><i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="index.html#yourlink"><i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="index.html#yourlink"><i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="index.html#yourlink"><i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-text text-center mt-5 py-3">
+          <p>
+            Copy right @2022 Company
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+  <script src="./library/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./library/jquery-3.6.0.min.js"></script>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
