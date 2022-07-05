@@ -7,6 +7,10 @@ $accent-color: #043e75;
   box-sizing: border-box;
 }
 
+h4 {
+  line-height: 1.8;
+}
+
 //customize the navbar bootstrap design for mobile
 .navbar {
   background-color: $primary-color;

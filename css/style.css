@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+h4 {
+  line-height: 1.8;
+}
+
 .navbar {
   background-color: #000000;
   color: red;
