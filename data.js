@@ -42,16 +42,16 @@ const projectData = [
   //   id: '13',
   //   tag: 'saas',
   // },
-  // {
-  //   img: 'images/template-img/flash.png',
-  //   title: 'flash',
-  //   description:
-  //     'flash is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
-  //   live: `${liveUrl}flash/`,
-  //   download: `${downloadURL}qswfg`,
-  //   id: '12',
-  //   tag: 'saas',
-  // },
+  {
+    img: 'images/template-img/flash.png',
+    title: 'flash',
+    description:
+      'flash is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}flash/`,
+    download: `${downloadURL}gvtqvr`,
+    id: '12',
+    tag: 'saas',
+  },
   {
     img: 'images/template-img/abstract.png',
     title: 'abstract',
