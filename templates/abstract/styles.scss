@@ -339,7 +339,7 @@ ul {
 
   &-item {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 
     &-avatar {
       width: 150px;
@@ -365,6 +365,14 @@ ul {
 
     p {
       margin: 0;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    &::after {
+      color: $color-accent;
+      font-weight: bold;
     }
   }
 }
@@ -411,6 +419,7 @@ ul {
 .price {
   background: $color-secondery;
   text-align: center;
+  line-height: 2;
 
   &-top {
     color: $color-black;
@@ -426,7 +435,7 @@ ul {
   }
 
   &-item {
-    width: 250px;
+    width: 300px;
     margin: 1rem auto;
     padding: 2rem 1rem;
     background-color: $color-white;

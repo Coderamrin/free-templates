@@ -333,7 +333,7 @@ ul {
 
 .testimonials-item {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .testimonials-item-avatar {
@@ -360,6 +360,12 @@ ul {
 
 .testimonials-item p {
   margin: 0;
+}
+
+.testimonials .swiper-button-next::after,
+.testimonials .swiper-button-prev::after {
+  color: #5f00ba;
+  font-weight: bold;
 }
 
 /*projects section styles*/
@@ -403,6 +409,7 @@ ul {
 .price {
   background: #f5f5f5;
   text-align: center;
+  line-height: 2;
 }
 
 .price-top {
@@ -419,7 +426,7 @@ ul {
 }
 
 .price-item {
-  width: 250px;
+  width: 300px;
   margin: 1rem auto;
   padding: 2rem 1rem;
   background-color: #fff;

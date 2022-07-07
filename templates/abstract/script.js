@@ -27,24 +27,34 @@ window.onscroll = () => {
   }
 };
 
-//projects tab
+//projects tab with mixitup
 $(document).ready(function () {
-  $('.projects-tab-btn').click(function () {
-    const value = $(this).attr('data-filter');
+  const mixer = mixitup('.projects-tab-items');
+});
 
-    if (value === 'all') {
-      $('.projects-tab-item').show();
-    } else {
-      $('.projects-tab-item')
-        .not('.' + value)
-        .hide();
-      $('.projects-tab-item')
-        .filter('.' + value)
-        .show();
-    }
-  });
-
-  $('.projects-tab-btn').click(function () {
-    $(this).addClass('active').siblings().removeClass('active');
-  });
+//testimonial slider
+var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 2500,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    440: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
 });
