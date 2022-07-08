@@ -22,16 +22,16 @@ const projectData = [
   //   id: '15',
   //   tag: 'saas',
   // },
-  // {
-  //   img: 'images/template-img/saass.png',
-  //   title: 'saass',
-  //   description:
-  //     'saass is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
-  //   live: `${liveUrl}saas/`,
-  //   download: `${downloadURL}qswfg`,
-  //   id: '14',
-  //   tag: 'saas',
-  // },
+  {
+    img: 'images/template-img/saass.png',
+    title: 'saass',
+    description:
+      'saass is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}saass/`,
+    download: `${downloadURL}qswfg`,
+    id: '14',
+    tag: 'saas',
+  },
   {
     img: 'images/template-img/aviato.png',
     title: 'aviato',
