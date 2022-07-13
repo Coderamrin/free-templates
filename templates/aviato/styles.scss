@@ -254,7 +254,6 @@ ul {
   }
 }
 
-
 /*Features section styles*/
 .features {
   background-color: $color-primary;
@@ -380,6 +379,11 @@ ul {
     text-align: center;
     margin: 0.5rem;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-weight: bold;
+  }
 }
 
 /*FAQ section styles*/
@@ -392,24 +396,20 @@ ul {
   }
 }
 
-
 /*Blog section styles*/
 .blog {
   padding: 5rem 0;
-  background-color: $color-primary;
   &-item {
-    background-color: $color-white;
+    background-color: $color-primary;
     padding: 0;
     margin: 1rem;
-    border: 1px solid $color-text;
-    border-radius: 10px;
 
     img {
       width: 100%;
     }
 
     p {
-      padding: 0rem 1rem;
+      padding: 0.1rem 1rem;
       text-transform: capitalize;
     }
 
@@ -417,13 +417,11 @@ ul {
       padding: 1rem;
       display: inline-block;
       text-decoration: none;
-      font-weight: bold;
     }
 
     &-title {
       font-weight: bold;
       color: $color-black;
-      font-size: $fs-small;
     }
 
     &-btn {
@@ -432,18 +430,16 @@ ul {
   }
 
   .btn-primary {
+    display: inline-block;
+    width: 200px;
     margin: 2rem auto;
-    background-color: $color-accent;
-    color: $color-white;
 
     &:hover {
-      background-color: transparent;
-      color: $color-accent;
-      border-color: $color-accent;
+      color: $color-black;
+      border-color: $color-black;
     }
   }
 }
-
 //blog article
 .blog {
   &-hero {

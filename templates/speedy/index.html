@@ -5,12 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>speedy | Agency Landing Page</title>
+  <title>speedy | Saas Landing Page</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./library/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./library/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
@@ -262,35 +263,57 @@
       </p>
     </div>
     <div class="container pb-5">
-      <div class="row justify-content-center">
-        <div class="testimonials-item col-md-5">
-          <p class="testimonials-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-            vitae
-            a voluptatum totam sit aspernatur architecto.
-          </p>
-          <h4 class="highlighted-text">Sherly Smith</h4>
-          <p>CEO @Apple</p>
-          <img src="./images/testimonial-img.png" alt="">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="testimonials-item swiper-slide">
+            <p class="testimonials-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+              vitae
+              a voluptatum totam sit aspernatur architecto.
+            </p>
+            <h4 class="highlighted-text">David Amell</h4>
+            <p>CEO @Apple</p>
+            <img src="./images/testimonial-img-1.png" alt="">
+          </div>
+          <div class="testimonials-item swiper-slide">
+            <p class="testimonials-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+              vitae
+              a voluptatum totam sit aspernatur architecto.
+            </p>
+            <h4 class="highlighted-text">Sony Asperna</h4>
+            <p>CEO @Apple</p>
+            <img src="./images/testimonial-img-2.png" alt="">
+          </div>
+          <div class="testimonials-item swiper-slide">
+            <p class="testimonials-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+              vitae
+              a voluptatum totam sit aspernatur architecto.
+            </p>
+            <h4 class="highlighted-text">Jhon Dell</h4>
+            <p>CEO @Apple</p>
+            <img src="./images/testimonial-img-3.png" alt="">
+          </div>
+          <div class="testimonials-item swiper-slide">
+            <p class="testimonials-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+              vitae
+              a voluptatum totam sit aspernatur architecto.
+            </p>
+            <h4 class="highlighted-text">Sam Halls</h4>
+            <p>CEO @Apple</p>
+            <img src="./images/testimonial-img-4.png" alt="">
+          </div>
         </div>
-        <div class="testimonials-item col-md-5">
-          <p class="testimonials-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-            vitae
-            a voluptatum totam sit aspernatur architecto.
-          </p>
-          <h4 class="highlighted-text">David Amell</h4>
-          <p>CEO @Apple</p>
-          <img src="./images/testimonial-img.png" alt="">
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
-
   <!--Testimonials End-->
 
   <!--FAQ Start-->
-
   <section class="faq section py-5">
     <div class="container py-5">
       <div class="row align-items-center justify-content-between">
@@ -408,7 +431,6 @@
       </div>
     </div>
   </section>
-
   <!--FAQ End-->
 
   <!--Blog Start-->
@@ -456,7 +478,6 @@
 
     </div>
   </section>
-
   <!--Blog End-->
 
   <!-- Footer Start -->
@@ -514,6 +535,7 @@
 
   <script src="./library/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./library/jquery-3.6.0.min.js"></script>
+  <script src="./library/swiper/swiper-bundle.min.js"></script>
 
   <script src="./script.js"></script>
 

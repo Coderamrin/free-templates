@@ -176,6 +176,8 @@ ul {
 
   &-btn {
     padding: 0.5rem 1.5rem;
+    background-color: $color-accent;
+    border-color: $color-accent;
   }
 }
 
@@ -379,6 +381,7 @@ ul {
   }
 }
 
+/*testimonials section styles*/
 .testimonials {
   background-color: $color-primary;
 
@@ -387,6 +390,12 @@ ul {
     padding: 3rem 2rem;
     text-align: center;
     margin: 0.5rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-weight: bold;
+    color: $color-accent;
   }
 }
 

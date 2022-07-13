@@ -160,6 +160,8 @@ ul {
 
 .nav-btn {
   padding: 0.5rem 1.5rem;
+  background-color: #33cb98;
+  border-color: #33cb98;
 }
 
 .collapse.navbar-collapse {
@@ -369,6 +371,7 @@ ul {
   border-color: #fff;
 }
 
+/*testimonials section styles*/
 .testimonials {
   background-color: #f5f6ff;
 }
@@ -378,6 +381,12 @@ ul {
   padding: 3rem 2rem;
   text-align: center;
   margin: 0.5rem;
+}
+
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
+  font-weight: bold;
+  color: #33cb98;
 }
 
 /*Blog section styles*/

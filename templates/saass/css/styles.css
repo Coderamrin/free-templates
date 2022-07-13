@@ -384,6 +384,7 @@ ul {
   border-color: #fff;
 }
 
+/*testimonials section styles*/
 .testimonials {
   background-color: #f5f6ff;
 }
@@ -393,6 +394,11 @@ ul {
   padding: 3rem 2rem;
   text-align: center;
   margin: 0.5rem;
+}
+
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
+  font-weight: bold;
 }
 
 /*Blog section styles*/

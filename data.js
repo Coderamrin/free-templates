@@ -1,27 +1,28 @@
+const prodLiveUrl = 'http://127.0.0.1:5500/templates/';
 const liveUrl = 'https://htmltemplatess.netlify.app/templates/';
 const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
-  // {
-  //   img: 'images/template-img/grow.png',
-  //   title: 'grow',
-  //   description:
-  //     'grow is a landing page template for Saas. It is responsive and built with Bootstrap, Html and SaSS',
-  //   live: `${liveUrl}grow/`,
-  //   download: `${downloadURL}qswfg`,
-  //   id: '16',
-  //   tag: 'saas',
-  // },
-  // {
-  //   img: 'images/template-img/speedy.png',
-  //   title: 'speedy',
-  //   description:
-  //     'speedy is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
-  //   live: `${liveUrl}speedy/`,
-  //   download: `${downloadURL}qswfg`,
-  //   id: '15',
-  //   tag: 'saas',
-  // },
+  {
+    img: 'images/template-img/grow.png',
+    title: 'grow',
+    description:
+      'grow is a landing page template for Saas. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}grow/`,
+    download: `${downloadURL}abtees`,
+    id: '16',
+    tag: 'saas',
+  },
+  {
+    img: 'images/template-img/speedy.png',
+    title: 'speedy',
+    description:
+      'speedy is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+    live: `${liveUrl}speedy/`,
+    download: `${downloadURL}qzhou`,
+    id: '15',
+    tag: 'saas',
+  },
   {
     img: 'images/template-img/saass.png',
     title: 'saass',
