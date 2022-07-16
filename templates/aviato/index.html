@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Aviato</a>
+        <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-austral-sign navbar-brand-icon"></i> Aviato</a>
         <button class="navbar-toggler" type="button" id="navbarNavBtn" data-bs-toggle="collapse"
           data-bs-target="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <div class="navbar-toggler">
@@ -63,16 +63,20 @@
   <section class="hero">
     <div class="container">
       <div class="row align-items-center justify-content-between">
-        <div class="hero-text col-lg-6 pb-7">
-          <h1 class="hero-title">Powering Your business from everywhere
+        <div class="hero-text col-lg-6">
+          <h1 class="hero-title">grow your business like fire
 
           </h1>
           <p class="hero-description">
-            It is a long established fact that a reader will be distracted by the readable content of a page when It is
-            a long established fact that a reader
+            Aenean vel consequat augue, ac iaculis elit. Nulla eu dolor quis justo semper aliquet. Integer maximus risus
+            ante, at
+            egestas dolor molestie.
           </p>
 
-          <a class="btn hero-btn" href="#services">Learn More</a>
+          <div class="hero-form">
+            <input type="text" placeholder="Enter email">
+            <button class="btn">subscribe</button>
+          </div>
         </div>
         <div class="hero-img col-lg-6">
           <img src="./images/hero-img.png" alt="" />
@@ -82,43 +86,12 @@
   </section>
   <!-- Hero End -->
 
-  <!--Brands Start-->
-  <section class="brands py-5">
-    <div class="container text-center">
-      <p>Rerum eveniet repudiandae, repellat quis officiis autem?</p>
-      <div class="row align-items-center justify-content-center py-3">
-        <div class="col-md-2 pb-5 ">
-          <img src="./images/amazon.svg" alt="amazon logo">
-        </div>
-        <div class="col-md-2 pb-5">
-          <img src="./images/google.svg" alt="google logo">
-        </div>
-        <div class="col-md-2 pb-5">
-          <img src="./images/intel.svg" alt="intel logo">
-        </div>
-        <div class="col-md-2 pb-5">
-          <img src="./images/microsoft.svg" alt="microsoft logo">
-        </div>
-        <div class="col-md-2 pb-5">
-          <img src="./images/amazon.svg" alt="amazon logo">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Brands End-->
-
-  <!--Features Start-->
-  <section class="features py-5" id="features">
-    <div class="container pb-5">
-      <div class="row">
-        <div class="section-top features-top py-5 col-md-7">
-          <p class="section-subtitle">why choose next</p>
-          <h2 class="section-title">Features that you need to grow your business</h2>
-        </div>
-      </div>
+  <!--Cards Start-->
+  <section class="cards" id="cards">
+    <div class="container">
       <div class="row justify-content-between">
-        <div class="features-item features-item-active col-md-4">
-          <div class="features-item-icon mb-3">
+        <div class="cards-item cards-item-active col-lg-4">
+          <div class="cards-item-icon mb-3">
             <i class="fas fa-chart-line"></i>
           </div>
           <h3 class="title">Lorem ipsum</h3>
@@ -126,8 +99,8 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           </p>
         </div>
-        <div class="features-item col-md-4">
-          <div class="features-item-icon mb-3">
+        <div class="cards-item col-lg-4">
+          <div class="cards-item-icon mb-3">
             <i class="fas fa-chart-bar"></i>
           </div>
           <h3 class="title">Lorem ipsum</h3>
@@ -135,35 +108,8 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           </p>
         </div>
-        <div class="features-item col-md-4">
-          <div class="features-item-icon mb-3">
-            <i class="fa-solid fa-person-running"></i>
-          </div>
-          <h3 class="title">Lorem ipsum</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          </p>
-        </div>
-        <div class="features-item col-md-4">
-          <div class="features-item-icon mb-3">
-            <i class="fas fa-chart-bar"></i>
-          </div>
-          <h3 class="title">Lorem ipsum</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          </p>
-        </div>
-        <div class="features-item col-md-4">
-          <div class="features-item-icon mb-3">
-            <i class="fa-solid fa-person-running"></i>
-          </div>
-          <h3 class="title">Lorem ipsum</h3>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          </p>
-        </div>
-        <div class="features-item col-md-4">
-          <div class="features-item-icon mb-3">
+        <div class="cards-item col-lg-4">
+          <div class="cards-item-icon mb-3">
             <i class="fa-solid fa-person-running"></i>
           </div>
           <h3 class="title">Lorem ipsum</h3>
@@ -174,13 +120,170 @@
       </div>
     </div>
   </section>
+  <!--Cards End-->
+
+  <!--Features Start-->
+  <section class="features py-5" id="features">
+    <div class="section-top features-top py-5">
+      <p class="section-subtitle">Features</p>
+      <h2 class="section-title">Donec gravida ultricies.</h2>
+      <p class="section-description">
+        Integer mattis auctor felis at pharetra. Vestibulum ipsum elit, congue eget malesuada quis, ultrices et justo.
+        Mauris
+        gravida eu felis et bibendum.
+      </p>
+    </div>
+    <div class="container features-content pb-5">
+      <ul class="tab tab-pills mb-3" id="pills-tab" role="tablist">
+        <li class="tab-item" role="presentation">
+          <button class="tab-link nav-link active" id="pills-livechat-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-livechat" type="button" role="tab" aria-controls="pills-livechat"
+            aria-selected="true">Live Chat</button>
+        </li>
+        <li class="tab-item" role="presentation">
+          <button class="tab-link nav-link" id="pills-tracking-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-tracking" type="button" role="tab" aria-controls="pills-tracking"
+            aria-selected="true">Tracking</button>
+        </li>
+        <li class="tab-item" role="presentation">
+          <button class="tab-link nav-link" id="pills-dataflow-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-dataflow" type="button" role="tab" aria-controls="pills-dataflow"
+            aria-selected="true">Data Flow</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-livechat" role="tabpanel" aria-labelledby="pills-livechat-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-6">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Easiest possible integration
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4>View Data</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4>Track User Data</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-tracking" role="tabpanel" aria-labelledby="pills-tracking-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-5">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Veritatis ipsa asperiores natus
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4 class="">Track User</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4 class="">See what the user doing</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-dataflow" role="tabpanel" aria-labelledby="pills-dataflow-tab"
+          tabindex="0">
+          <div class="row justify-content-between align-items-center">
+            <div class="features-img col-lg-5">
+              <img src="./images/features-img.png" alt="dashboard preview">
+            </div>
+
+            <div class="features-info col-lg-6">
+              <h3>
+                Easiest possible integration
+              </h3>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis ipsa asperiores natus voluptate
+                repudiandae enim laborum ea vel, inventore, culpa optio nulla quibusdam minus provident nemo, vero illo
+                reiciendis delectus.
+              </p>
+
+              <h4 class="">View Data</h4>
+              <p>Delectus iure rem quam, odit assumenda impedit minus, iusto hic nulla at aliquam et corporis ullam
+                reprehenderit quod</p>
+
+              <h4 class="">Track User Data</h4>
+              <p>Nam nesciunt error ex. hic nulla at aliquam et corporis ullam reprehenderit quod. Nam nesciunt error
+                ex.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!--Features End-->
+
+
+  <!--Counter Start-->
+  <section class="counter" id="counter">
+    <div class="container">
+      <div class="row">
+        <div class="counter-item col-md-3">
+          <p class="counter-number" data-purecounter-start="0" data-purecounter-end="34000"
+            data-precounter-duration="3">
+            34000
+          </p>
+          <p class="counter-text">Happy customers</p>
+        </div>
+        <div class="counter-item col-md-3">
+          <p class="counter-number" data-purecounter-start="0" data-purecounter-end="4000" data-precounter-duration="3">
+            4000
+          </p>
+          <p class="counter-text">Nam nesciunt</p>
+        </div>
+        <div class="counter-item col-md-3">
+          <p class="counter-number" data-purecounter-start="0" data-purecounter-end="43552"
+            data-precounter-duration="3">
+            43552
+          </p>
+          <p class="counter-text">reprehenderit</p>
+        </div>
+        <div class="counter-item col-md-3">
+          <p class="counter-number" data-purecounter-start="0" data-purecounter-end="53423"
+            data-precounter-duration="3">
+            53423
+          </p>
+          <p class="counter-text">corporis ullam</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Counter End-->
+
 
   <!--Process Start-->
   <section class="process py-5" id="process">
     <div class="container">
       <div class="process-item row justify-content-between align-items-center">
-        <div class="process-item-info col-md-6">
+        <div class="process-item-info col-lg-6">
           <p class="section-subtitle">
             01.Process
           </p>
@@ -191,15 +294,15 @@
             cum laborum.
           </p>
         </div>
-        <div class="process-item-img col-md-5">
+        <div class="process-item-img col-lg-5">
           <img src="./images/image-1.png" alt="laptop showing the analytics">
         </div>
       </div>
       <div class="process-item row justify-content-between align-items-center">
-        <div class="process-item-img col-md-5">
+        <div class="process-item-img col-lg-5">
           <img src="./images/image-1.png" alt="laptop showing the analytics">
         </div>
-        <div class="process-item-info col-md-6">
+        <div class="process-item-info col-lg-6">
           <p class="section-subtitle">
             02.consectetur
           </p>
@@ -215,56 +318,6 @@
   </section>
   <!--Process End-->
 
-  <!--About Start-->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="about-img col-md-6">
-          <img src="./images/about-img.png" alt="a man smilling">
-        </div>
-        <div class="about-info col-md-6">
-          <p class="section-subtitle">about us</p>
-          <h2 class="section-title">Get to know people behind Aviato</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore numquam perspiciatis omnis similique odio
-            expedita voluptas doloribus dignissimos quae natus maiores nemo tenetur incidunt aspernatur quo totam at,
-            fuga deleniti!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore numquam perspiciatis omnis similique odio
-            expedita voluptas doloribus dignissimos quae natus maiores nemo tenetur incidunt aspernatur quo totam at,
-            fuga deleniti!
-          </p>
-          <div>
-            <img src="./images/avatar.png" alt="ceo image">
-            <span class="px-2">Sam CEO @aviato</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--About End-->
-
-  <!--Download Start-->
-  <section class="download" id="download">
-    <div class="section-top download-top py-5">
-      <p class="section-subtitle">download</p>
-      <h2 class="section-title download-title">easy to manage and grow your business</h2>
-      <p class="section-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo similique. Ducimus reiciendis dolor
-        explicabo non illum! Nisi
-      </p>
-
-      <div class="download-buttons">
-        <a class="btn" href="#downloadlink">Download Now!</a>
-        <a class="btn btn-primary" href="#pricing">Our Pricing</a>
-      </div>
-    </div>
-  </section>
-  <!--Download End-->
-
-
   <!-- Price Start -->
   <section class="price section py-5" id="pricing">
     <div class="section-top price-top py-5">
@@ -279,39 +332,41 @@
     </div>
 
     <div class="container">
-      <div class="row pb-5">
-        <div class="price-item col-md-4">
-          <p class="section-subtitle">free</p>
+      <div class="row pb-5 justify-content-center">
+        <div class="price-item col-lg-3">
           <h3 class="price-type">basic</h3>
+          <p class="price-amount"> $0</p>
           <ul class="available-services">
             <li>Lorem ipsum dolor</li>
             <li>sit amet consectetur</li>
             <li>Lorem Ipsum has been the</li>
+            <li>Ut quis pellentesque sem</li>
           </ul>
-          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
-          <button class="btn price-btn">download Now</button>
+          <button class="btn price-btn">Buy Now</button>
         </div>
-        <div class="price-item col-md-4">
-          <p class="section-subtitle">team</p>
+        <div class="price-item col-lg-3">
+          <h3 class="price-type">Regular</h3>
+          <p class="price-amount"> $10</p>
+          <ul class="available-services">
+            <li>Lorem ipsum dolor</li>
+            <li>sit amet consectetur</li>
+            <li>Praesent sit amet lacinia</li>
+            <li>Curabitur vestibulum, erat</li>
+            <li>Ut quis pellentesque sem</li>
+          </ul>
+          <button class="btn price-btn">Buy Now</button>
+        </div>
+        <div class="price-item col-lg-3">
           <h3 class="price-type">Advance</h3>
+          <p class="price-amount"> $30</p>
           <ul class="available-services">
             <li>Lorem ipsum dolor</li>
-            <li>sit amet consectetur</li>
-            <li>Lorem Ipsum has been the</li>
-          </ul>
-          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
-          <button class="btn price-btn">download Now</button>
-        </div>
-        <div class="price-item col-md-4">
-          <p class="section-subtitle">advance</p>
-          <h3 class="price-type">Enterprise</h3>
-          <ul class="available-services">
             <li>Lorem ipsum dolor</li>
             <li>sit amet consectetur</li>
-            <li>Lorem Ipsum has been the</li>
+            <li>Aliquam erat volutpat</li>
+            <li>Curabitur vestibulum, erat</li>
           </ul>
-          <p class="price-amount-cont"> <span class="price-amount"> $0</span>/month</p>
-          <button class="btn price-btn">download Now</button>
+          <button class="btn price-btn">Buy Now</button>
         </div>
       </div>
     </div>
@@ -320,64 +375,133 @@
 
   <!--Testimonials Start-->
   <section class="testimonials py-5" id="testimonials">
-    <div class="section-top testimonials-top py-5">
-      <p class="section-subtitle">testimonials</p>
-      <h2 class="section-title">What our clients & partners Says</h2>
-      <p class="section-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sed
-        provident libero cumque.
-      </p>
-    </div>
-    <div class="container pb-5">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="testimonials-item swiper-slide">
-            <p class="testimonials-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-              vitae
-              a voluptatum totam sit aspernatur architecto.
-            </p>
-            <h4 class="highlighted-text">David Amell</h4>
-            <p>CEO @Apple</p>
-            <img src="./images/testimonial-img-1.png" alt="">
-          </div>
-          <div class="testimonials-item swiper-slide">
-            <p class="testimonials-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-              vitae
-              a voluptatum totam sit aspernatur architecto.
-            </p>
-            <h4 class="highlighted-text">Sony Asperna</h4>
-            <p>CEO @Apple</p>
-            <img src="./images/testimonial-img-2.png" alt="">
-          </div>
-          <div class="testimonials-item swiper-slide">
-            <p class="testimonials-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-              vitae
-              a voluptatum totam sit aspernatur architecto.
-            </p>
-            <h4 class="highlighted-text">Jhon Dell</h4>
-            <p>CEO @Apple</p>
-            <img src="./images/testimonial-img-3.png" alt="">
-          </div>
-          <div class="testimonials-item swiper-slide">
-            <p class="testimonials-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
-              vitae
-              a voluptatum totam sit aspernatur architecto.
-            </p>
-            <h4 class="highlighted-text">Sam Halls</h4>
-            <p>CEO @Apple</p>
-            <img src="./images/testimonial-img-4.png" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="./images/quote.png" alt="">
+        </div>
+
+        <div class="swiper testimonial col-md-10">
+          <div class="swiper-wrapper">
+            <div class="testimonials-item swiper-slide">
+              <p class="testimonials-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+                vitae
+                a voluptatum totam sit aspernatur architecto.
+              </p>
+              <h4 class="">David Amell</h4>
+              <p>CEO @Apple</p>
+              <img src="./images/testimonial-img-1.png" alt="">
+            </div>
+            <div class="testimonials-item swiper-slide">
+              <p class="testimonials-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+                vitae
+                a voluptatum totam sit aspernatur architecto.
+              </p>
+              <h4 class="">Sony Asperna</h4>
+              <p>CEO @Apple</p>
+              <img src="./images/testimonial-img-2.png" alt="">
+            </div>
+            <div class="testimonials-item swiper-slide">
+              <p class="testimonials-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+                vitae
+                a voluptatum totam sit aspernatur architecto.
+              </p>
+              <h4 class="">Jhon Dell</h4>
+              <p>CEO @Apple</p>
+              <img src="./images/testimonial-img-3.png" alt="">
+            </div>
+            <div class="testimonials-item swiper-slide">
+              <p class="testimonials-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae quasi nemo eligendi sapiente,
+                vitae
+                a voluptatum totam sit aspernatur architecto.
+              </p>
+              <h4 class="">Sam Halls</h4>
+              <p>CEO @Apple</p>
+              <img src="./images/testimonial-img-4.png" alt="">
+            </div>
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
   <!--Testimonials End-->
+
+  <!--Brands Start-->
+  <section class="brands py-5">
+    <div class="container text-center">
+      <p>Rerum eveniet repudiandae, repellat quis officiis autem?</p>
+      <div class="row align-items-center justify-content-center py-3">
+        <div class="col-md-2 brands-item">
+          <img src="./images/amazon.svg" alt="amazon logo">
+        </div>
+        <div class="col-md-2 brands-item">
+          <img src="./images/google.svg" alt="google logo">
+        </div>
+        <div class="col-md-2 brands-item">
+          <img src="./images/intel.svg" alt="intel logo">
+        </div>
+        <div class="col-md-2 brands-item">
+          <img src="./images/microsoft.svg" alt="microsoft logo">
+        </div>
+        <div class="col-md-2 brands-item">
+          <img src="./images/amazon.svg" alt="amazon logo">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Brands End-->
+
+  <!--Blog Start-->
+  <section class="blog" id="blog">
+    <div class="section-top blog-top pb-5">
+      <p class="section-subtitle">blog</p>
+      <h2 class="section-title">Check our latest news & articles</h2>
+      <p class="section-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla inventore libero, corrupti sapiente eius, ipsum
+        nobis atque iusto voluptatem aspernatur
+      </p>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by<a href="#">Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+        <div class="blog-item col-md-3">
+          <img src="./images/blog-img.png" alt="blog thumbnail">
+          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
+          <p class="blog-item-title">
+            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
+          </p>
+          <a href="blog-article.html" class="blog-item-btn">Read More</a>
+        </div>
+
+        <div class="col-md-3">
+          <a href="blog-home.html" class="btn btn-primary">Browse our blog</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--Blog End-->
+
 
   <!--FAQ Start-->
   <section class="faq section py-5">
@@ -494,53 +618,6 @@
   </section>
   <!--FAQ End-->
 
-  <!--Blog Start-->
-  <section class="blog" id="blog">
-    <div class="section-top blog-top pb-5">
-      <p class="section-subtitle">blog</p>
-      <h2 class="section-title">Check our latest news & articles</h2>
-      <p class="section-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla inventore libero, corrupti sapiente eius, ipsum
-        nobis atque iusto voluptatem aspernatur
-      </p>
-    </div>
-
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="blog-item col-md-3">
-          <img src="./images/blog-img.png" alt="blog thumbnail">
-          <p>oct 25, 2022 by<a href="#">Jhon Doe </a></p>
-          <p class="blog-item-title">
-            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
-          </p>
-          <a href="blog-article.html" class="blog-item-btn">Read More</a>
-        </div>
-        <div class="blog-item col-md-3">
-          <img src="./images/blog-img.png" alt="blog thumbnail">
-          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
-          <p class="blog-item-title">
-            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
-          </p>
-          <a href="blog-article.html" class="blog-item-btn">Read More</a>
-        </div>
-        <div class="blog-item col-md-3">
-          <img src="./images/blog-img.png" alt="blog thumbnail">
-          <p>oct 25, 2022 by <a href="#"> Jhon Doe </a></p>
-          <p class="blog-item-title">
-            Sed perspiciatis voluptatem, quas laudantium doloribus eveniet enim.
-          </p>
-          <a href="blog-article.html" class="blog-item-btn">Read More</a>
-        </div>
-
-        <div class="col-md-3">
-          <a href="blog-home.html" class="btn btn-primary">Browse our blog</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-  <!--Blog End-->
-
   <!-- Footer Start -->
   <footer class="footer pt-5">
     <div class="container">
@@ -597,6 +674,7 @@
   <script src="./library/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./library/jquery-3.6.0.min.js"></script>
   <script src="./library/swiper/swiper-bundle.min.js"></script>
+  <script src="./library/purecounter.js"></script>
 
   <script src="./script.js"></script>
 

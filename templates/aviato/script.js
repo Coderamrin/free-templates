@@ -27,9 +27,41 @@ window.onscroll = () => {
   }
 };
 
+//counter config
+new PureCounter({
+  selector: ".counter-number"
+});
+
 
 //testimonial slider
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.testimonial', {
+  slidesPerView: 2,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2500,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    440: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
+
+//brand slider
+var swiper = new Swiper('.brands -item', {
   slidesPerView: 2,
   spaceBetween: 20,
   autoplay: {

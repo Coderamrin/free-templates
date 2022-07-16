@@ -3,55 +3,35 @@ const liveUrl = 'https://htmltemplatess.netlify.app/templates/';
 const downloadURL = 'https://codearamrin.gumroad.com/l/';
 
 const projectData = [
-  {
-    img: 'images/template-img/grow.png',
-    title: 'grow',
-    description:
-      'grow is a landing page template for Saas. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}grow/`,
-    download: `${downloadURL}abtees`,
-    id: '16',
-    tag: 'saas',
-  },
-  {
-    img: 'images/template-img/speedy.png',
+{
+  img: 'images/template-img/speedy.png',
     title: 'speedy',
-    description:
-      'speedy is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+      description:
+  'speedy is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
     live: `${liveUrl}speedy/`,
-    download: `${downloadURL}qzhou`,
-    id: '15',
-    tag: 'saas',
+      download: `${downloadURL}qzhou`,
+        id: '15',
+          tag: 'saas',
   },
-  {
-    img: 'images/template-img/saass.png',
+{
+  img: 'images/template-img/saass.png',
     title: 'saass',
-    description:
-      'saass is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+      description:
+  'saass is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
     live: `${liveUrl}saass/`,
-    download: `${downloadURL}kyibgg`,
-    id: '14',
-    tag: 'saas',
+      download: `${downloadURL}kyibgg`,
+        id: '14',
+          tag: 'saas',
   },
-  {
-    img: 'images/template-img/aviato.png',
+{
+  img: 'images/template-img/aviato.png',
     title: 'aviato',
-    description:
-      'aviato is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
+      description:
+  'aviato is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
     live: `${liveUrl}aviato/`,
-    download: `${downloadURL}vqbev`,
-    id: '13',
-    tag: 'saas',
-  },
-  {
-    img: 'images/template-img/flash.png',
-    title: 'flash',
-    description:
-      'flash is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS',
-    live: `${liveUrl}flash/`,
-    download: `${downloadURL}gvtqvr`,
-    id: '12',
-    tag: 'saas',
+      download: `${downloadURL}vqbev`,
+        id: '13',
+          tag: 'saas',
   },
   {
     img: 'images/template-img/abstract.png',
