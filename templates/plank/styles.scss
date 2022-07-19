@@ -131,7 +131,7 @@ ul {
 }
 
 .highlighted-text {
-  color: $color-accent;
+  color: $color-black;
 }
 
 /* nav styles */
@@ -163,26 +163,16 @@ ul {
   &-item {
     font-size: 0.9rem;
     margin-right: 1rem;
+    margin: 0.2rem;
   }
 
   &-link {
     color: $color-white !important;
     font-size: $fs-xxsmall;
+    border-bottom: 2px solid $color-accent;
     &:hover {
       color: $color-white;
-    }
-  }
-
-  &-link.active {
-    &::after {
-      text-align: center;
-      content: '';
-      width: 100%;
-      height: 3px;
-      display: block;
-      background-color: $color-white;
-      position: relative;
-      top: 18px;
+      border-color: $color-white;
     }
   }
 
@@ -200,6 +190,23 @@ ul {
   }
 }
 
+.dropdown {
+  &-menu {
+    background-color: $color-accent;
+  }
+  &-item {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
 .collapse.navbar-collapse {
   display: block;
   position: absolute;
@@ -208,7 +215,7 @@ ul {
   top: 100%;
   right: 200%;
   padding: 0 1rem;
-  background-color: $color-primary;
+  background-color: $color-accent;
   transition: right 0.5s ease;
 }
 
@@ -316,8 +323,9 @@ ul {
       padding-left: 1rem;
     }
 
-    h4 {
+    h3 {
       margin: 0;
+      font-size: $fs-small;
     }
   }
 }
@@ -384,20 +392,18 @@ ul {
     padding: 0;
     border-radius: 10px;
 
+    &-info {
+      padding: 1rem 1rem;
+    }
+
     img {
       width: 100%;
     }
 
-    p {
-      padding: 0.1rem 1rem;
-      text-transform: capitalize;
-    }
-
     a {
-      padding: 1rem;
-      display: inline-block;
+      display: block;
       text-decoration: none;
-      font-weight: bold;
+      padding: 0;
     }
 
     &-title {
@@ -406,6 +412,7 @@ ul {
     }
 
     &-btn {
+      margin-top: 0.5rem;
       color: $color-accent;
     }
   }
@@ -499,15 +506,16 @@ ul {
     margin: 2rem 0;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     a {
       &:first-child {
-        padding: 0.5rem 1.2rem;
+        padding: 0.3rem 1rem;
       }
 
       display: inline-block;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
+      padding: 0.3rem 0.8rem;
+      margin: 0.2rem;
       background-color: $color-white;
       color: $color-accent;
       border-radius: 50%;
@@ -530,6 +538,27 @@ ul {
 
 //desktop styles
 @media screen and (min-width: 990px) {
+  .nav {
+    &-link {
+      &.active {
+        &::after {
+          text-align: center;
+          content: '';
+          width: 100%;
+          height: 3px;
+          display: block;
+          background-color: $color-white;
+          position: relative;
+          top: 18px;
+        }
+      }
+
+      &:hover {
+        border-color: $color-accent;
+      }
+    }
+  }
+
   .collapse.navbar-collapse {
     display: inline-block;
     position: static;
@@ -538,7 +567,7 @@ ul {
   }
 
   .secondery-nav {
-    background-color: $color-primary;
+    background-color: $color-accent;
     .nav-link {
       color: $color-black;
     }
@@ -555,5 +584,9 @@ ul {
         width: auto;
       }
     }
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }

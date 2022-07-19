@@ -3,8 +3,13 @@ const navBtn = document.querySelector('#navbarNavBtn');
 const navNav = document.querySelector('#navbarNav');
 const navLinks = document.getElementsByClassName('nav-link');
 
+//adding active class to navlinks
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('click', function () {
+    if (this.classList.contains("dropdown-toggle")) {
+      return
+    }
+
     let current = document.getElementsByClassName('active');
     current[0].className = current[0].className.replace(' active', '');
 
@@ -18,6 +23,7 @@ for (let i = 0; i < navLinks.length; i++) {
 navBtn.addEventListener('click', () => {
   navNav.classList.toggle('open');
 });
+
 
 //adding the scrolled class when scrolled
 window.onscroll = () => {
