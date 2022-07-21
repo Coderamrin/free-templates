@@ -380,8 +380,7 @@ ul {
 
 .blog-item {
   background-color: #fff;
-  margin: 2rem 1rem;
-  padding: 0;
+  margin: 1rem 0.5rem;
   border-radius: 10px;
 }
 
@@ -504,7 +503,7 @@ ul {
 
 .footer .social a {
   display: inline-block;
-  padding: 0.3rem 0.8rem;
+  padding: 0.1rem 0.5rem;
   margin: 0.2rem;
   background-color: #fff;
   color: #7d33f6;
@@ -516,7 +515,7 @@ ul {
 }
 
 .footer .social a:first-child {
-  padding: 0.3rem 1rem;
+  padding: 0.1rem .8rem;
 }
 
 .footer .social a:hover {

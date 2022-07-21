@@ -5,6 +5,10 @@ const navLinks = document.getElementsByClassName('nav-link');
 
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener('click', function () {
+    if (this.classList.contains("dropdown-toggle")) {
+      return;
+    }
+
     let current = document.getElementsByClassName('active');
     current[0].className = current[0].className.replace(' active', '');
 

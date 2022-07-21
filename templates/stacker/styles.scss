@@ -137,9 +137,9 @@ ul {
 
 /* nav styles */
 .navbar {
-  background-color: $color-accent;
+  background-color: $color-primary;
   color: $color-black;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   transition: all 0.5s ease-in;
 
@@ -147,10 +147,6 @@ ul {
     font-size: 1.5rem;
     font-weight: bold;
     color: $color-black;
-
-    &:hover {
-      color: $color-black;
-    }
 
     &-icon {
       color: $color-accent;
@@ -165,7 +161,6 @@ ul {
   }
 }
 
-/*nav styles*/
 .nav {
   &-item {
     font-size: 0.9rem;
@@ -183,16 +178,6 @@ ul {
 
   &-link.active {
     color: $color-accent !important;
-    &::after {
-      text-align: center;
-      content: '';
-      width: 100%;
-      height: 3px;
-      display: block;
-      background-color: $color-accent;
-      position: relative;
-      top: 18px;
-    }
   }
 
   &-btn {
@@ -202,6 +187,22 @@ ul {
       border-color: $color-accent;
       color: $color-accent;
       background-color: transparent;
+    }
+  }
+}
+
+.dropdown {
+  &-menu {
+    border: 0;
+    background-color: $color-white;
+  }
+  &-item {
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-accent;
     }
   }
 }
@@ -228,7 +229,7 @@ ul {
   &-line {
     width: 40px;
     height: 5px;
-    background-color: $color-white;
+    background-color: $color-accent;
     border-radius: 10px;
     display: block;
     &:nth-child(2) {
@@ -348,12 +349,12 @@ ul {
     background-color: $color-light-green;
 
     &:nth-child(even) {
-      border-top-left-radius: 30%;
-      border-bottom-left-radius: 30%;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
     }
     &:nth-child(odd) {
-      border-top-right-radius: 30%;
-      border-bottom-right-radius: 30%;
+      border-top-right-radius: 40%;
+      border-bottom-right-radius: 40%;
     }
   }
 }
@@ -363,7 +364,6 @@ ul {
   &-item {
     background-color: $color-light-green;
     padding: 3rem 2rem;
-    margin: 0.8rem;
   }
 
   &-author {
@@ -451,8 +451,7 @@ ul {
     }
 
     a {
-      padding: 1rem;
-      display: inline-block;
+      display: block;
       text-decoration: none;
       font-weight: bold;
     }
@@ -464,6 +463,8 @@ ul {
 
     &-btn {
       color: $color-accent;
+      margin: 1rem;
+      display: inline-block;
     }
   }
 
@@ -480,7 +481,7 @@ ul {
   }
 }
 
-//blog article
+/*blog article*/
 .blog {
   &-hero {
     padding-top: 8rem;
@@ -596,6 +597,24 @@ ul {
 
 //desktop styles
 @media screen and (min-width: 990px) {
+  //navbar desktop styles
+  .navbar {
+    background-color: $color-white;
+  }
+
+  .nav-link.active {
+    &::after {
+      text-align: center;
+      content: '';
+      width: 100%;
+      height: 3px;
+      display: block;
+      background-color: $color-accent;
+      position: relative;
+      top: 18px;
+    }
+  }
+
   .collapse.navbar-collapse {
     display: inline-block;
     position: static;
@@ -604,7 +623,7 @@ ul {
   }
 
   .secondery-nav {
-    // background-color: $color-primary;
+    background-color: $color-primary;
     .nav-link {
       color: $color-black;
     }
@@ -614,10 +633,12 @@ ul {
     }
   }
 
-  .navbar {
-    background-color: transparent;
+  //show dropdown on hover
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 
+  //hero section desktop style
   .hero {
     text-align: left;
     &-img {
